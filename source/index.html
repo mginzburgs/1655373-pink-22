@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/elements/logo-text.svg" width="74" height="23" alt="Приложение Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение Пинк</h1>
+      <section class="downloads">
+        <div class="downloads__wrapper">
+          <h2 class="downloads__heading">Взгляните на жизнь иначе!</h2>
+          <a class="button" href="https://www.apple.com/app-store/">Скачать Приложение</a>
+          <ul class="downloads-platform__list">
+            <li class="downloads-platform-list__item">
+              <a class="platform-item__apple" href="https://www.apple.com/app-store/"></a>
+            </li>
+            <li class="downloads-platform-list__item">
+              <a class="platform-item__android" href="https://play.google.com/store/apps"></a>
+            </li>
+            <li class="downloads-platform-list__item">
+              <a class="platform-item__windows" href="https://www.microsoft.com/en-us/store/apps/windows-phone"></a>
+            </li>
+          </ul>
+          <p class="downloads__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+        <h2 class="advantages__heading">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+        <ul class="advantages__list">
+          <li class="advantages-list-item advantages-item">
+            <h3 class="advantages-item__heading">Поднимает настроение</h3>
+            <p class="advantages-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages-list-item advantages-item">
+            <h3 class="advantages-item__heading">Меняет мир вокруг</h3>
+            <p class="advantages-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages-list-item advantages-item">
+            <h3 class="advantages-item__heading">Заводит новых друзей</h3>
+            <p class="advantages-item__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper"></div>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <blockquote class="reviews__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            <cite class="reviews__person">Николай Петров</cite>
+            <p class="reviews__person-description">25 лет, водитель трамвая</p>
+          </li>
+        </ul>
+        <div class="reviews__toggles slider-toggle">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
+      </section>
+      <section class="subscription-plan">
+        <div class="subscription-plan__wrapper">
+      <table class="subscription-plan__table">
+        <tr class="subscription-plan__heading-table-row">
+          <th></th>
+          <th>База<p class="subscription-plan__price">1,99 USD</p></th>
+          <th>Стандарт<p class="subscription-plan__price">3,99 USD</p></th>
+          <th>АНЛИМ<p class="subscription-plan__price">9,99 USD</p></th>
+        </tr>
+        <tr class="subscription-plan__main-table-row">
+          <th class="subscription-plan__legend-cell">Розовый фильтр</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+        </tr>
+        <tr class="subscription-plan__main-table-row">
+          <th class="subscription-plan__legend-cell">Смайлики</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--cross">нет</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+        </tr>
+        <tr class="subscription-plan__main-table-row">
+          <th class="subscription-plan__legend-cell">Комментарии</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--cross">нет</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--cross">нет</th>
+          <th class="subscription-plan__data-cell subscription-plan__data-cell--tick">да</th>
+        </tr>
+      </table>
+      <p class="subscription-plan__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle slider__toggle--current" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </div>
+    </section>
+    </main>
+    <footer class="page-footer">
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__heading">Остались вопросы?<br>Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">Звоните:<a class="contacts__item--link" href="tel:+7812555-66-66">+7 (812) 555-66-66</a></li>
+            <li class="contacts__item">Пишите:<a class="contacts__item--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+            <li class="contacts__item">Приезжайте в гости:<a class="contacts__item--link" href="#">ул. Большая Конюшенная, 19/8</a></li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="footer-bottom__wrapper">
+          <a class="footer-bottom__logo">
+          <img class="footer-bottom__logo-image" src="img/elements/logo-image-text.svg" width="145" height="40" alt="Приложение Пинк">
+          </a>
+          <div class="social-media">
+            <ul class="social-medial__list">
+              <li class="social-media__item">
+                <a class="social-media__button" href="#"></a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__button" href="#"></a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__button" href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom__developer-info">
+            <p>Разработано</p>
+            <a href="https://htmlacademy.ru/intensive/adaptive"><img class="developer-info__logo" src="img/elements/html_academy.svg" width="27" height="34" alt="HTML academy"></a>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
