@@ -1,13 +1,23 @@
 .downloads {
-  background-color: @background-darkblue;
   color: @white;
+  height: 733px;
+  width: 100%;
+  background-color: @darkblue;
   background-image: url("../../img/elements/back-mobiledownloads-main-image.jpg");
   background-repeat: no-repeat;
-  height: 462px;
-  width: 100%;
+  background-position: top left;
+  padding-top: 66px;
+
+  @media (min-width: @tablet-width) {
+    padding: 110px;
+    transition: 0.1s;
+  }
+
 }
 
-//.downloads__wrapper {}
+.downloads__wrapper {
+  margin: 0 auto;
+}
 
 .downloads__heading {
   font-weight: 300;

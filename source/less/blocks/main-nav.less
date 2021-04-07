@@ -4,6 +4,15 @@
 .main-nav__list {
   list-style: none;
   padding: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
@@ -12,6 +21,14 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  background: @darkblue;
+  box-shadow: 0px 1px 0px @black, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    box-shadow: none;
+  }
 }
 
 //.main-nav__item--active {}

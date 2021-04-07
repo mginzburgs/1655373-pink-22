@@ -35,7 +35,7 @@
     <main class="inner-page">
       <div class="inner-page__wrapper">
       <div class="inner-page__header">
-        <h1 class="inner-page__heading">Фотографии пользователей</h1>
+        <h1 class="inner-page__header-heading">Фотографии пользователей</h1>
       </div>
       <section class="photos">
         <div class="photos__wrapper">
@@ -55,13 +55,13 @@
               <img class="photos-item__photo" src="img/catalog-photos/car.jpg" width="280" height="180" alt="машина">
               <div class="photos-item__comment">
                 <cite class="photos-item__comment-person">Левон</cite><p class="photos-comment__time">(5 часов назад)</p>
-                <p class="photos-comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="photos-item__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </div>
               <div class="photos-item__like-counter">
               <a href="#" class="photos-item__like-counter-text">Нравится: 356</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
               </div>
             </li>
-            <li class="photos__item">
+            <li class="photos__item photos-item">
               <img class="photos-item__photo" src="img/catalog-photos/drums.jpg" width="280" height="180" alt="машина">
               <div class="photos-item__comment">
                 <cite class="photos-item__comment-person">Антон</cite><p class="photos-comment__time">(12 часов назад)</p>
@@ -122,15 +122,15 @@
             <input type="file" name="photo-upload" id="photo-upload">
             <label for="photo-upload"></label>
             <ul class="photo-upload__editor-list">
-                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon photo-editor__icon--active">Вырезать</a>
+                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon-crop photo-editor__icon--active">Вырезать</a>
                   <input class="photo-editor__slider photo-editor__slider--active" type="range" min="1" max="100" value="70" id="slider-crop">
                   <label for="slider-crop"></label>
                 </li>
-                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon">Заливка</a>
+                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon-fill">Заливка</a>
                   <input class="photo-editor__slider" type="range" min="1" max="100" value="20" id="slider-fill">
                   <label for="slider-fill"></label>
                 </li>
-                <li class="photo-upload__item photo-editor"><a class="photo-editor__icont">Контраст</a>
+                <li class="photo-upload__item photo-editor"><a class="photo-editor__icon-contrast">Контраст</a>
                   <input class="photo-editor__slider" type="range" min="1" max="100" value="60" id="slider-contrast">
                   <label for="slider-contrast"></label>
                 </li>
