@@ -1,28 +1,30 @@
 .downloads {
   color: @white;
-  height: 733px;
-  width: 100%;
-  background-color: @darkblue;
-  background-image: url("../../img/elements/back-mobiledownloads-main-image.jpg");
+  background-image:  url(../../img/elements/phone_main_page.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top left;
-  padding-top: 66px;
-
-  @media (min-width: @tablet-width) {
-    padding: 110px;
-    transition: 0.1s;
-  }
-
+  background-position: -100px bottom;
+  position: relative;
+  margin-bottom: 271px;
+  min-height: 396px;
 }
 
 .downloads__wrapper {
   margin: 0 auto;
+  position: absolute;
+  bottom: -271px;
+  background-color: @darkblue;
+  height: 271px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .downloads__heading {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  text-align: center;
 }
 
 .downloads__description {

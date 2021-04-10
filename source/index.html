@@ -6,14 +6,16 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--main-nav-closed">
+      <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/elements/logo-text.svg" width="74" height="23" alt="Приложение Пинк">
       </a>
+      <button class="page-header__main-nav-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -35,9 +37,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк</h1>
       <section class="downloads">
+        <h2 class="downloads__heading">Взгляните на жизнь иначе!</h2>
         <div class="downloads__wrapper">
-          <h2 class="downloads__heading">Взгляните на жизнь иначе!</h2>
-          <a class="button" href="https://www.apple.com/app-store/">Скачать Приложение</a>
+          <a class="button downloads__button" href="https://www.apple.com/app-store/">Скачать Приложение</a>
           <ul class="downloads-platform__list">
             <li class="downloads-platform-list__item">
               <a class="platform-item__apple" href="https://www.apple.com/app-store/"></a>
