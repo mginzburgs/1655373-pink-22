@@ -1,34 +1,58 @@
 .downloads {
+  display: grid;
   color: @white;
-  background-image:  url(../../img/elements/phone_main_page.png);
-  background-size: contain;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../img/elements/downloads_background.png");
   background-repeat: no-repeat;
-  background-position: -100px bottom;
-  position: relative;
-  margin-bottom: 271px;
-  min-height: 396px;
+  background-size: 1200px 271px;
+  transition: 0.3s;
+  background-position: bottom;
+  height: 667px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 1200px 0;
+    transition: 0.3s;
+    justify-content: start;
+  }
 }
 
 .downloads__wrapper {
-  margin: 0 auto;
-  position: absolute;
-  bottom: -271px;
-  background-color: @darkblue;
-  height: 271px;
-  width: 100%;
-  text-align: center;
-  padding-top: 20px;
+  margin: 0 20px;
+  max-width: 320px;
 }
 
 .downloads__heading {
+  display: block;
+  margin-top: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  width: 280px;
   text-align: center;
+  padding-top: 29px;
+  margin-bottom: 348px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    transition: 0.3s;
+    margin-bottom: 39px;
+  }
 }
 
 .downloads__description {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.downloads__button {
+  display: block;
+  max-width: 300px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin-bottom: 38px;
 }

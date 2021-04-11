@@ -1,20 +1,33 @@
 .reviews {
   background-color: @white;
+  display: grid;
+  justify-items: center;
+  margin-top: 0;
 }
 
-//.reviews__wrapper {}
+.reviews__wrapper {
+  margin: 0 20px;
+}
 
 .reviews__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-//.reviews__item {}
+.reviews__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
 
 .reviews__comment {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  order: 2;
+  margin: 0;
+  text-align: center;
 }
 
 .reviews__person {
@@ -22,10 +35,11 @@
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
+  order: 1;
 }
 
 .reviews__person-description {
   display: none;
 }
 
-//.reviews__toggles {]
+//.reviews__toggles {}
