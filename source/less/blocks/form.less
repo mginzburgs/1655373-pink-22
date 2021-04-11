@@ -1,5 +1,9 @@
 .form {
   background-color: @white;
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
 }
 
 .form__inner-page-heading {
@@ -8,45 +12,13 @@
   font-size: 14px;
   line-height: 30px;
   color: @darkblue;
-}
-//.form__form {}
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 55px;
 
-//.contest-form {}
-
-//.contest-form__section {}
-
-.contest-form__heading {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: @red;
-}
-
-//.contest-form__text-item {}
-
-.contest-form__text-label {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @red;
-}
-
-.contest-form__text-input {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-// .contest-form__checkbox-list {}
-
-// .contest-list__checkbox-item {}
-
-.contest-form__checkbox-input {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+  }
 }
 
 .form__necessary-fields {
@@ -60,9 +32,6 @@
   color: @red;
 }
 
-// .contest-form__radio-list {}
 
-// .contest-list__radio-item {}
-// .contest-form__radio-input {}
 // .form-button {}
 //.form__necessary-fields {}

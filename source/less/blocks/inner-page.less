@@ -5,9 +5,27 @@
   line-height: 30px;
 }
 
-//.inner-page__wrapper {}
+.inner-page__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .inner-page__header {
-  background-color: @background-darkblue;
+  display: grid;
+  color: @white;
+  justify-content: center;
+  text-align: center;
+  height: 171px;
+
+  @media (min-width: @tablet-width) {
+    height: 330px;
+    transition: 0.3s;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 285px;
+    transition: 0.3s;
+  }
 }
 
 .inner-page__header-heading {
@@ -16,4 +34,7 @@
   font-size: 24px;
   line-height: 33px;
   color: @white;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
