@@ -1,0 +1,116 @@
+.contest-form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+
+  @media (min-width: @tablet-width) {
+    grid-template-areas:
+      "personal"
+      "application"
+      "contact"
+      "travel"
+      "emotions";
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-colums: 1fr 1fr;
+    grid-template-areas:
+      "personal application"
+      "contact contact"
+      "travel travel"
+      "emotions emotions";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contest-form__section-personal {
+    grid-area: personal;
+  }
+
+  .contest-form__section-app {
+    grid-area: application;
+  }
+
+  .contest-form__section-contact {
+    grid-area: contact;
+  }
+
+  .contest-form__section-travel {
+    grid-area: travel;
+  }
+
+  .contest-form__section-emotions {
+    grid-area: emotions;
+  }
+}
+
+
+//.contest-form {}
+
+.contest-form__section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.contest-form__section:nth-child(even) {
+background-color: @block-background-grey;
+}
+
+.contest-form__section-personal {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.contest-form__heading {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @red;
+  padding-top: 42px;
+  text-align: center;
+}
+
+.contest-form__text-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__text-label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @red;
+  padding-left: 23px;
+}
+
+.contest-form__text-input {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__checkbox-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// .contest-list__checkbox-item {}
+
+.contest-form__checkbox-input {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__radio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// .contest-list__radio-item {}
+// .contest-form__radio-input {}

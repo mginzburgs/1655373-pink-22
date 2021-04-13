@@ -16,8 +16,17 @@
   background-position: center top;
 }
 
+.page__body--inner {
+  background-image: url("../img/elements/inner__page_background.png");
+  background-size: contain;
+
+  @media (min-width: @desktop-width) {
+    background-size: 1200px;
+    background-position-y: -400px;
+  }
+}
+
 .page__container {
   max-width: 1200px;
   margin: 0 auto;
-  background-size: cover;
 }
