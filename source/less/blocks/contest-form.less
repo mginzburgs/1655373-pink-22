@@ -53,6 +53,10 @@
   border: none;
 }
 
+.contest-form__section:nth-child(even) {
+background-color: @block-background-grey;
+}
+
 .contest-form__section-personal {
   display: grid;
   grid-template-columns: auto;
@@ -64,9 +68,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @red;
+  padding-top: 42px;
+  text-align: center;
 }
 
-//.contest-form__text-item {}
+.contest-form__text-item {
+  display: flex;
+  flex-direction: column;
+}
 
 .contest-form__text-label {
   font-weight: normal;
@@ -74,6 +83,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @red;
+  padding-left: 23px;
 }
 
 .contest-form__text-input {
@@ -96,7 +106,11 @@
   line-height: 30px;
 }
 
-// .contest-form__radio-list {}
+.contest-form__radio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 // .contest-list__radio-item {}
 // .contest-form__radio-input {}
