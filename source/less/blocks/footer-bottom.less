@@ -1,14 +1,26 @@
-//.footer-bottom {}
+.footer-bottom {
+  height: 284px;
+  display: grid;
+
+
+  @media (min-width: @tablet-width) {
+    height: 127px;
+  }
+}
 
 .footer-bottom__wrapper {
   display: grid;
   justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: max-content auto max-content;
     justify-items: center;
-    transition: 5s;
+    transition: 0.5s;
+    margin: 0 20px;
   }
 }
 

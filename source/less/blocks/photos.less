@@ -2,34 +2,76 @@
   background-color: @white;
 }
 
-//.photos__wrapper {}
+.photos__wrapper {
+  margin: 0 20px;
+}
 
 .photos__heading {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  margin: 0;
+
 }
 
 .photos__list {
   list-style: none;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  padding: 0;
+  grid-gap: 20px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content auto;
+  }
 }
 
 //.photos__item {}
+
 .photos-item {
   background-color: @background-grey;
-  margin: 20px;
-  width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-//.photos-item__photo {}
-//.photos-item__photo--popular {}
-//.photos-item__comment {}
+
+.photos-item__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  object-fit: cover;
+}
+
+.photos-item--popular {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.photos-item__comment {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: auto auto auto;
+  margin-left: 17px;
+}
 .photos-item__comment-person {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: @darkblue;
+  grid-column-end: 2;
 }
 
 .photos-comment__time {
@@ -37,6 +79,8 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
+  margin: 0;
+
 }
 
 .photos-item__comment-text {
@@ -44,19 +88,37 @@
   font-size: 14px;
   line-height: 24px;
   color: @darkblue;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
-//.photos-item__like-counter {}
+.photos-item__like-counter {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 17px;
+}
 
 .photos-item__like-counter-text {
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   color: @red;
+  margin-left: 18px;
 }
 //.photos-item__like-counter-image {}
 
 .photos__footer {
+  display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 52px;
+  margin: 0;
 }
