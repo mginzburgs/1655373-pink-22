@@ -1,7 +1,11 @@
-//.advantages {}
+.advantages {
+  width: 100%;
+  background-color: @block-background-grey;
+}
 
 .advantages__wrapper {
-  background-color: @block-background-grey;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .advantages__heading {
@@ -14,16 +18,17 @@
   margin: 0;
   padding-top: 46px;
   padding-bottom: 72px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__list {
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto;
   justify-content: center;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
     justify-content: end;

@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     grid-template-areas:
@@ -51,6 +52,11 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (max-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
 }
 
 .contest-form__section:nth-child(even) {
