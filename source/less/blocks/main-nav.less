@@ -1,6 +1,11 @@
 .main-nav {
   grid-column-start: 1;
   grid-column-end: -1;
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
 }
 
 //.main-nav__wrapper {}
@@ -9,6 +14,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+}
 }
 
 .main-nav__item {
