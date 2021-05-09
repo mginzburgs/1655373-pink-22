@@ -1,52 +1,65 @@
 .page-header {
   background-color: fade(@black, 30%);
-  max-width: 1200px;
   margin: 0 auto;
-  align-content: center;
+  max-width: 1200px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 100px 1fr;
+  }
 }
+
 
 .page-header__wrapper {
   grid-column-start: 1 / 2;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 50px;
   grid-template-rows: 66px auto;
   align-items: center;
-}
-
-.page-header--main-nav-open {
-  box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  padding: 0 20px;
 
   @media (min-width: @desktop-width) {
-    background: none;
-    box-shadow: none;
-  }
+    padding-left: 96px;
+    padding-right: 0;
 }
+}
+.page-header--main-nav-open {
+  box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  background-color: @darkblue;
+  }
+
 
 .page-header--main-nav-open .page-header__wrapper {
   grid-template-rows: 69px auto;
 
-  @media (max-width: @desktop-width) {
-    display: block;
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 110px auto;
   }
 }
 
-.page-header--main-nav-closed .main-nav {
-  @media (min-width: @desktop-width) {
-  display: none;
-}
 
 .page-header--main-nav-closed .page-header__wrapper {
-  grid-template-rows: 69px auto;
+  grid-template-rows: 66px auto;
 
-  @media (min-width: @desktop-width) {
-    display: block;
+  @media (min-width: @tablet-width) {
+    grid-template-rows: 110px auto;
   }
+
 }
 
 .page-header__logo {
   width: 74px;
   height: 23px;
 }
+
+.page-header--main-nav-closed .main-nav {
+  display: none;
+
+  @media (min-width:@desktop-width) {
+    display: block;
+  }
+}
+
 
 // .page-header__logo-image {}
 
@@ -93,4 +106,21 @@
 
 .page-header--main-nav-open .page-header__main-nav-toggle::before {
   transform: rotate(-45deg);
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    background-color: transparent;
+  }
+
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  }
+  .page-header--main-nav-open {
+    background-color: transparent;
+    background-color: fade(@black, 30%);
+    box-shadow: none;
+    }
 }

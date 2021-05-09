@@ -21,7 +21,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Фотографии</a>
@@ -44,17 +44,20 @@
       <section class="photos">
         <div class="photos__wrapper">
           <h2 class="photos__heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <div class="photos__panorama photos-panorama">
+              <img class="photos-panorama__photo" src="img/catalog-photos/panorama-desktop.jpg" width="320" height="137" alt="панорама гор">
+              <div class="photos-panorama__wrapper">
+              <div class="photos-panorama__comment">
+                <cite class="photos-panorama__comment-person">Анна</cite><p class="photos-item__comment-time">(5 минут назад)</p>
+                <p class="photos-panorama__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              </div>
+              <div class="photos-panorama__like-counter">
+              <a href="#" class="photos-panorama__like-counter-text">Нравится: 215</a><img class="photos-panorama__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
+              </div>
+              </div>
+          </div>
+          <div class="photos__list-container">
           <ul class="photos__list">
-            <li class="photos__item photos-item photos-item--popular">
-              <img class="photos-item__photo" src="img/catalog-photos/panorama-desktop.jpg" width="320" height="137" alt="панорама гор">
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Анна</cite><p class="photos-item__comment-time">(5 минут назад)</p>
-                <p class="photos-item__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 215</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
             <li class="photos__item photos-item">
               <img class="photos-item__photo" src="img/catalog-photos/car.jpg" width="280" height="180" alt="машина">
               <div class="photos-item__comment">
@@ -116,6 +119,7 @@
               </div>
             </li>
           </ul>
+        </div>
         </div>
         <p class="photos__footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
