@@ -20,10 +20,10 @@
   overflow-wrap: break-word;
   width: 100%;
 
-  @media (max-width:@mobile-width-only){
-  width: 300vw;
-  transform: translateX(-33.33%);
-}
+  @media (max-width: @mobile-width-only) {
+    width: 300vw;
+    transform: translateX(-33.33%);
+  }
 }
 
 .subscription-plan__heading-table-row {
@@ -34,20 +34,13 @@
   background-color: @background-darkblue;
 }
 
-.subscription-plan__legend-cell {
-  @media (max-width:@mobile-width-only){
-  display: none;
-  }
-}
-
-
 .subscription-plan__heading-first-cell {
   border: 2px solid @background-grey;
   border-radius: 1px 0 0 0;
   visibility: hidden;
 
-  @media (max-width:@mobile-width-only){
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -77,6 +70,10 @@
 
   @media (max-width: @mobile-width-only) {
     visibility: hidden;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 

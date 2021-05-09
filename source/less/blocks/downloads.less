@@ -4,28 +4,23 @@
   justify-content: start;
   grid-template-columns: 1fr;
   background-color: @darkblue;
-
-
   margin: 0 auto;
-
   position: relative;
   margin-top: -66px;
   width: 100%;
-
-
   background-image: url("../img/elements/inner_page_header__background.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 1200px;
   z-index: -2;
 
-    @media (min-width: @tablet-width) {
-      margin-top: -110px;
-}
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+  }
 }
 
 .downloads::after {
-  content: '';
+  content: "";
   background-image: url("../img/elements/downloads_background.png");
   background-size: 1200px 271px;
   background-repeat: no-repeat;
@@ -36,76 +31,27 @@
   display: block;
   z-index: -1;
 
-    @media (min-width: @tablet-width) {
-      display: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
-}
-
-// .downloads::after {
-//   content: '';
-//   background-image: url("../img/elements/downloads_background.png");
-//   background-repeat: no-repeat;
-//
-//   transition: 0.3s;
-//   background-position: bottom;
-//   height: 500px;
-//   display: block;
-//   position: absolute;
-//   width: 100%;
-//   outline: 2px solid red;
-//   background-color: red;
-
-//   width: 100%;
-
-//   @media (min-width: @tablet-width) {
-//     background-size: 1200px 0px;
-//     transition: 0.3s;
-//     justify-content: start;
-//   }
-// }
-
-
-// .downloads__wrapper::after {
-//   content: '';
-//   position: absolute;
-//   width: 320px;
-//   height: 286px;
-//   background-image: url("../img/elements/phone_main_page.png");
-//   background-color: red;
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   // transform: translateY(90px) translateX(-242px);
-//   z-index: 1;
-
-//   @media (min-width: @tablet-width) {
-//     bottom: 0;
-//     transition: 0.3s;
-//     width: 660px;
-//     height: 545px;
-//     // transform: translateY(141px) translateX(-77px);
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     bottom: 0;
-//     transition: 0.3s;
-//     width: 1053px;
-//     height: 645px;
-//     // transform: translateY(22px) translateX(-77px);
-// }
-// }
 
 .downloads__wrapper {
-  margin: 66px 20px 0px;
+  margin: 66px auto 0;
   width: 100%;
+  max-width: 1200px;
 }
 
 .downloads__container {
-  margin: 0 auto;
+  padding: 0 20px;
   width: auto;
   justify-content: start;
   display: grid;
   max-width: 1200px;
-  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    justify-content: center;
+  }
 
   @media (min-width: @tablet-width) {
     height: 618px;
@@ -119,7 +65,7 @@
     display: block;
     min-width: @tablet-width;
     text-align: left;
-
+    padding: 0 96px;
   }
 }
 
@@ -148,7 +94,7 @@
 }
 
 .downloads__heading::after {
-  content: '';
+  content: "";
   display: block;
   width: auto;
   height: 286px;
@@ -167,17 +113,17 @@
     margin: 0;
     transform: translateY(-85px) translateX(150px);
     z-index: -1;
-}
+  }
 
-@media (min-width: @desktop-width) {
-  position: absolute;
-  transition: 0.3s;
-  width: 1050px;
-  height: 845px;
-  margin: 0;
-  transform: translateY(-75px) translateX(150px);
-  z-index: -1;
-}
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    transition: 0.3s;
+    width: 1050px;
+    height: 845px;
+    margin: 0;
+    transform: translateY(-75px) translateX(150px);
+    z-index: -1;
+  }
 }
 
 .downloads__description {
@@ -191,9 +137,9 @@
   margin-bottom: 38px;
   text-align: start;
 
-  @media (max-width:@mobile-width-only) {
-  text-align: center;
-}
+  @media (max-width: @mobile-width-only) {
+    text-align: center;
+  }
 }
 
 .downloads__button {
@@ -213,15 +159,11 @@
   margin: 0;
   display: flex;
   margin-bottom: 28px;
-  max-width: auto;
+  max-width: 300px;
   justify-content: center;
   align-items: center;
   height: 56px;
   width: auto;
-  width: 300px;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
 }
 
 .downloads__list-item {
@@ -231,8 +173,6 @@
     margin-right: 0;
   }
 }
-
-
 
 .downloads__link--android {
   background-image: url("../img/elements/android-logo.svg");
