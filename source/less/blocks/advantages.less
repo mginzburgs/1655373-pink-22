@@ -2,7 +2,7 @@
   background-color: @white;
   background-image: url("../img/element/grey-background.svg");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-size: cover;
 }
 
 .advantages__wrapper {
@@ -31,8 +31,48 @@
   grid-template-rows: auto;
   justify-content: center;
   margin: 72px 0 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    justify-content: end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 47px auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-auto-flow: column;
+  }
+}
+
+.advantages__list::after {
+  content: "";
+  display: block;
+  background-image: url("../img/element/phone-mobile.png");
+  width: 136px;
+  height: 245px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/element/phone@2x-mobile.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    height: 547px;
+    width: 268px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    background-image: url("../img/element/phone-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/phone@2x-tablet.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

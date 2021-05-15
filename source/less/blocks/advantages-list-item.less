@@ -1,22 +1,60 @@
 .advantages-list-item {
-  grid-column-start: 1;
-  grid-column-end: -1;
   text-align: center;
   width: 280px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
-.advantages-list-item:last-child::after {
-  content: "";
-  display: block;
-  background-image: url("../img/element/phone-mobile.png");
-  width: 136px;
-  height: 245px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 48px auto 0;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/element/phone@2x-mobile.png");
+@media (min-width: @desktop-width) {
+  .advantages-list-item:last-child::before {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    background-image: url("../img/element/phone-hello-desktop.png");
+    width: 300px;
+    height: 382px;
+    background-repeat: no-repeat;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/phone-hello@2x-desktop.png");
+    }
+  }
+
+  .advantages-list-item:nth-child(2)::before {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 382px;
+    background-image: url("../img/element/phone-pink-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/phone-pink@2x-desktop.png");
+    }
+  }
+
+  .advantages-list-item:nth-child(1)::before {
+    margin: 0 auto;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 382px;
+    background-image: url("../img/element/phone-bw-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/phone-bw@2x-desktop.png");
+    }
   }
 }

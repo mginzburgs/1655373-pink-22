@@ -29,6 +29,7 @@
   text-align: center;
   background: @darkblue;
   box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  color: @white;
 
 
   @media (min-width: @desktop-width) {
@@ -44,9 +45,10 @@
 }
 
 .main-nav__item--active {
-  position: relative;
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
-
 
 @link: @white;
 @visited: @white;
@@ -59,11 +61,13 @@
 }
 
 .main-nav__item--active::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -13px;
-  left: 0;
-  height: 3px;
-  background: @link;
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -13px;
+    left: 0;
+    height: 3px;
+    background: @link;
+  }
 }
