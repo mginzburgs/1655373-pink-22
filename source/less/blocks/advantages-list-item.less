@@ -3,4 +3,20 @@
   grid-column-end: -1;
   text-align: center;
   width: 280px;
+  display: block;
+}
+
+.advantages-list-item:last-child::after {
+  content: "";
+  display: block;
+  background-image: url("../img/element/phone-mobile.png");
+  width: 136px;
+  height: 245px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 48px auto 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/element/phone@2x-mobile.png");
+  }
 }

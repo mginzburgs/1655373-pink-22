@@ -8,14 +8,18 @@
   position: relative;
   margin-top: -66px;
   width: 100%;
-  background-image: url("../img/elements/inner_page_header__background.png");
+  background-image: url("../img/element/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 1200px;
+  background-size: 100%;
   z-index: -2;
 
   @media (min-width: @tablet-width) {
     margin-top: -110px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/element/back@2x-mobile.jpg")
   }
 }
 
@@ -43,7 +47,7 @@
 }
 
 .downloads__container {
-  padding: 0 20px;
+  margin: 0 20px;
   width: auto;
   justify-content: start;
   display: grid;
@@ -78,12 +82,14 @@
   text-align: center;
   padding-top: 29px;
   margin: 0;
+  height: 396px;
 
 
   @media (min-width: @tablet-width) {
     padding-top: 102px;
     transition: 0.3s;
     margin-bottom: 39px;
+    height: 127px;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,12 +104,16 @@
   display: block;
   width: auto;
   height: 286px;
-  background-image: url("../img/elements/phone_main_page.png");
+  background-image: url("../img/element/hand-mobile.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   margin-top: 34px;
-  transform: translateY(35px) translateX(-20px);
+  transform: translateY(25px) translateX(-20px);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/element/hand@2x-mobile.png");
+  }
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -111,8 +121,13 @@
     width: 660px;
     height: 545px;
     margin: 0;
-    transform: translateY(-85px) translateX(150px);
+    transform: translateY(-85px) translateX(0px);
     z-index: -1;
+    background-image: url("../img/element/hand-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/hand@2x-tablet.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -121,9 +136,15 @@
     width: 1050px;
     height: 845px;
     margin: 0;
-    transform: translateY(-75px) translateX(150px);
+    transform: translateY(-70px) translateX(40px);
     z-index: -1;
+    background-image: url("../img/element/hand-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/hand@2x-desktop.png");
+    }
   }
+
 }
 
 .downloads__description {
@@ -143,14 +164,14 @@
 }
 
 .downloads__button {
-  display: inline-block;
   max-width: 300px;
-  padding-top: 18px;
-  padding-bottom: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 32px;
-  margin-top: 28px;
-  text-align: center;
   width: 100%;
+  height: 55px;
+  line-height: 18px;
 }
 
 .downloads__list {
@@ -175,7 +196,7 @@
 }
 
 .downloads__link--android {
-  background-image: url("../img/elements/android-logo.svg");
+  background-image: url("../img/element/android-logo.svg");
   background-size: auto;
   width: 43px;
   height: 47px;
@@ -185,7 +206,7 @@
 }
 
 .downloads__link--windows {
-  background-image: url("../img/elements/microsoft-logo.svg");
+  background-image: url("../img/element/microsoft-logo.svg");
   background-size: auto;
   width: 43px;
   height: 47px;
@@ -195,7 +216,7 @@
 }
 
 .downloads__link--apple {
-  background-image: url("../img/elements/apple-logo.svg");
+  background-image: url("../img/element/apple-logo.svg");
   background-size: auto;
   width: 47px;
   height: 56px;

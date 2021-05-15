@@ -30,10 +30,41 @@
   background: @darkblue;
   box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
+
   @media (min-width: @desktop-width) {
     background: none;
     box-shadow: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+    color: @white;
   }
+
 }
 
-//.main-nav__item--active {}
+.main-nav__item--active {
+  position: relative;
+}
+
+
+@link: @white;
+@visited: @white;
+@focus: @red;
+@hover: @red;
+@active: fadeout((@link),70%);
+
+.main-nav__item a {
+  .link-style(@link, @visited, @focus, @hover, @active);
+}
+
+.main-nav__item--active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -13px;
+  left: 0;
+  height: 3px;
+  background: @link;
+}

@@ -32,6 +32,7 @@
   line-height: 30px;
   color: @white;
   background-color: @background-darkblue;
+
 }
 
 .subscription-plan__heading-first-cell {
@@ -47,6 +48,7 @@
 .subscription-plan__heading-table-cell {
   border: 2px solid @darkblue;
   border-radius: 1px 0 0 0;
+  position: relative;
 }
 
 .subscription-plan__price {
@@ -54,6 +56,11 @@
   font-size: 18px;
   line-height: 30px;
   color: @white;
+  margin: 15px auto 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
 //.subscription-plan__main-table-row {}
@@ -67,6 +74,7 @@
   background-color: @white;
   color: @darkblue;
   text-transform: uppercase;
+  align: center;
 
   @media (max-width: @mobile-width-only) {
     visibility: hidden;
@@ -82,8 +90,76 @@
   background-color: @white;
 }
 
-// .subscription-plan__data-cell--tick {}
+.subscription-plan__data-cell > span {
+
+  @media (min-width:@tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.subscription-plan__heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0;
+  margin: 15px auto 0;
+}
+
+
+
+
+.subscription-plan__data-cell--tick::after {
+  content: "";
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/element/yes.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.subscription-plan__data-cell--cross::after {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/element/no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: inline-block;
+
+}
 // .subscription-plan__data-cell--cross {}
 .subscription-plan__toggles {
   text-align: center;
 }
+
+.subscription-plan__heading-table-cell:nth-child(3) > h1::before {
+  content: "";
+  background-image: url(../img/element/ribbon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 74px;
+  width: 74px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/element/ribbon@2x.png);
+  }
+}
+
+
