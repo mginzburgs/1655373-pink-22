@@ -32,7 +32,6 @@
   line-height: 30px;
   color: @white;
   background-color: @background-darkblue;
-
 }
 
 .subscription-plan__heading-first-cell {
@@ -91,8 +90,7 @@
 }
 
 .subscription-plan__data-cell > span {
-
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -115,9 +113,6 @@
   margin: 15px auto 0;
 }
 
-
-
-
 .subscription-plan__data-cell--tick::after {
   content: "";
   width: 31px;
@@ -138,16 +133,15 @@
   background-position: center;
   background-size: 100%;
   display: inline-block;
-
 }
-// .subscription-plan__data-cell--cross {}
+
 .subscription-plan__toggles {
   text-align: center;
 }
 
 .subscription-plan__heading-table-cell:nth-child(3) > h1::before {
   content: "";
-  background-image: url(../img/element/ribbon.png);
+  background-image: url("../img/element/ribbon.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 74px;
@@ -158,8 +152,6 @@
   left: 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/element/ribbon@2x.png);
+    background-image: url("../img/element/ribbon@2x.png");
   }
 }
-
-
