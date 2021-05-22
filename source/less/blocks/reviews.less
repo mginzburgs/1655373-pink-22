@@ -7,17 +7,17 @@
   position: relative;
 
   @media (min-width: @desktop-width) {
-  &::after {
-    content: "";
-    width: 79px;
-    height: 63px;
-    background-image: url(../../img/element/quotes-desktop.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    display: block;
-    top: 72px;
+    &::after {
+      content: "";
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/element/quotes-desktop.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      top: 72px;
+    }
   }
-}
 }
 
 
@@ -43,7 +43,7 @@
       content: "";
       width: 22px;
       height: 100%;
-      background-image: url(../../img/element/left-arrow.svg);
+      background-image: url("../img/element/left-arrow.svg");
       background-repeat: no-repeat;
       position: absolute;
       display: block;
@@ -55,7 +55,7 @@
       content: "";
       width: 22px;
       height: 100%;
-      background-image: url(../img/element/right-arrow.svg);
+      background-image: url("../img/element/right-arrow.svg");
       background-repeat: no-repeat;
       position: absolute;
       display: block;
@@ -80,8 +80,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-  font-size: 18px;
-  line-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -104,10 +104,11 @@
   }
 
   @media (min-width: @desktop-width) {
-  font-size: 24px;
-  line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
-}
+
 .reviews__person-description {
   display: none;
 
@@ -118,5 +119,3 @@
     line-height: 30px;
   }
 }
-
-
