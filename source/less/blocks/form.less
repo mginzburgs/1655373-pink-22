@@ -1,6 +1,7 @@
 .form {
   background-color: @white;
   width: 100%;
+  padding-bottom: 26px;
 }
 
 .form__wrapper {
@@ -23,7 +24,9 @@
   margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 100px;
+    margin: 100px 85px 82px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -32,10 +35,34 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 46px auto 0;
 }
 
 .form__necessary-fields-symbol {
   color: @red;
+}
+
+.form__button {
+  display: block;
+  font-family: "Open Sans" Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: @white;
+  text-decoration: none;
+  border: none;
+  border-radius: 1px;
+  background-color: @green;
+  box-sizing: border-box;
+  padding: 23px 45px;
+  width: 100%;
+  max-width: 296px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 

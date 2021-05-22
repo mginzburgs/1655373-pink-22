@@ -8,46 +8,47 @@
   </head>
   <body class="page__body">
     <div class="page__container">
-    <header class="page-header page-header--main-nav-closed">
-      <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <picture>
-        <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40" alt="Приложение Пинк">
-        <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40" alt="Приложение Пинк">
-        <img class="page-header__logo-image" src="img/element/logo-mobile.svg" width="74" height="23" alt="Приложение Пинк">
-        </picture>
-      </a>
-      <button class="page-header__main-nav-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-        </nav>
-    </header>
+      <header class="page-header page-header--main-nav-closed">
+        <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+          <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40" alt="Приложение Пинк">
+          <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40" alt="Приложение Пинк">
+          <img class="page-header__logo-image" src="img/element/logo-mobile.svg" width="74" height="23" alt="Приложение Пинк">
+          </picture>
+        </a>
+        <button class="page-header__main-nav-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+      </header>
     <main class="inner-page">
       <div class="inner-page__wrapper">
       <div class="inner-page__header">
         <h1 class="inner-page__header-heading">Фотографии<br>пользователей</h1>
       </div>
+      </div>
       <section class="photos">
         <div class="photos__wrapper">
-          <h2 class="photos__heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <h2 class="photos__heading">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
           <div class="photos__panorama photos-panorama">
               <picture>
                 <source media="(min-width: 1080px)" srcset="img/content/panorama-desktop.jpg 1x, img/content/panorama@2x-desktop.jpg  2x">
@@ -153,7 +154,7 @@
           </ul>
         </div>
         </div>
-        <p class="photos__footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photos__footer">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="photo-upload">
         <div class="photo-upload__wrapper">
@@ -180,8 +181,8 @@
                 </li>
             </ul>
             <div class="photo-upload__buttons">
-            <button class="button button--catalog" type="submit" value="upload">Запостить</button>
-            <button class="button button--catalog" type="reset" value="reset">Отмена</button>
+            <button class="button button--upload-catalog" type="submit" value="upload">Запостить</button>
+            <button class="button button--reset-catalog" type="reset" value="reset">Отмена</button>
             </div>
           </form>
         </div>

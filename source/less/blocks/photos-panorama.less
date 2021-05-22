@@ -1,5 +1,6 @@
 .photos-panorama {
   padding-bottom: 26px;
+  margin: 0 auto;
 }
 
 .photos-panorama__photo {
@@ -18,14 +19,6 @@
   min-height: 96px;
 }
 
-.photos-panorama--popular {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  max-height: 100%;
-  margin: 0;
-}
 
 .photos-panorama__comment {
   display: grid;
@@ -34,6 +27,8 @@
   padding-left: 17px;
   background-color: @background-grey;
   margin: 0 20px;
+  text-align: start;
+  padding: 25px 0px 25px 17px;
 
   @media (min-width: @desktop-width) {
     margin: 0 96px;
@@ -59,6 +54,7 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  text-align: start;
 }
 
 .photos-panorama__like-counter {

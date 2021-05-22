@@ -22,23 +22,32 @@
     content: "";
     display: block;
     background-image: url("../img/element/phone-hello-desktop.png");
-    width: 300px;
+    width: 186px;
     height: 382px;
+    background-size: contain;
     background-repeat: no-repeat;
-
+    transform: translateY(40px);
+    z-index: -1;
+    position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-hello@2x-desktop.png");
     }
   }
 
+
   .advantages-list-item:nth-child(2)::before {
     margin: 0 auto;
     content: "";
     display: block;
-    width: 300px;
+    width: 186px;
     height: 382px;
     background-image: url("../img/element/phone-pink-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(40px);
+    z-index: -1;
+    position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-pink@2x-desktop.png");
@@ -49,12 +58,33 @@
     margin: 0 auto;
     content: "";
     display: block;
-    width: 300px;
+    width: 186px;
     height: 382px;
     background-image: url("../img/element/phone-bw-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(40px);
+    z-index: -1;
+    position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-bw@2x-desktop.png");
     }
   }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-list-item::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 17px;
+    background-color: red;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+    opacity: 0.3;
+    filter: blur(4px);
+    top: 375px;
+    z-index: ;
+}
 }

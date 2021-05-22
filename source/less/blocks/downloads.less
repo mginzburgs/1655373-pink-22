@@ -61,11 +61,11 @@
 }
 
 .downloads__container {
-  margin: 0 20px;
   width: auto;
   justify-content: start;
   display: grid;
   max-width: 1200px;
+
 
   @media (max-width: @mobile-width-only) {
     justify-content: center;
@@ -76,6 +76,8 @@
     display: block;
     min-width: @tablet-width;
     text-align: left;
+    box-sizing: border-box;
+    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -97,7 +99,6 @@
   padding-top: 29px;
   margin: 0;
   height: 396px;
-
 
   @media (min-width: @tablet-width) {
     padding-top: 102px;

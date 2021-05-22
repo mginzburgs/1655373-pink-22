@@ -12,8 +12,42 @@
   box-sizing: border-box;
 }
 
-.button--catalog {
-  display: block;
+
+
+.button--upload-catalog {
   width: 280px;
   padding: 21px 90px;
+  color: @red;
+  border: solid 3px @red;
+
+  &:hover {
+    background-color: @red;
+    color: @white;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
 }
+
+.button--reset-catalog {
+  width: 280px;
+  padding: 21px 90px;
+  color: fade(@darkblue, 10%);
+  border: solid 3px  fade(@darkblue, 10%);
+
+
+  &:hover {
+    border: solid 3px  fade(@darkblue, 30%);
+    color: fade(@darkblue, 30%);
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+    background-color: fade(@darkblue, 30%);
+    border: solid 3px fade(@darkblue, 30%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+

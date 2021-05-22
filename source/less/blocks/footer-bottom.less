@@ -1,6 +1,8 @@
 .footer-bottom {
   height: 284px;
   display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
 
 
   @media (min-width: @tablet-width) {
@@ -12,7 +14,8 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
 
 
   @media (min-width: @tablet-width) {
@@ -20,7 +23,10 @@
     grid-template-columns: max-content auto max-content;
     justify-items: center;
     transition: 0.5s;
-    margin: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
   }
 }
 

@@ -1,6 +1,7 @@
 .photos {
   background-color: @white;
   width: 100%;
+  text-align: center;
 }
 
 .photos__wrapper {
@@ -16,8 +17,41 @@
   text-align: center;
   padding-top: 54px;
   padding-bottom: 60px;
-  margin: 0 auto;
+  padding: 54px 20px 60px;
   max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &::after {
+    content: "панорама дня";
+    color: @white;
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    background-color: @red;
+    display: inline-block;
+    z-index: 10;
+    bottom: -36px;
+    right: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+
+    @media (min-width: @desktop-width) {
+      right: 0;
+      transform: translateY(54px);
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 0;
+    }
+  }
 }
 
 .photos__list-container {
@@ -57,3 +91,4 @@
   padding-bottom: 52px;
   margin: 0;
 }
+

@@ -20,3 +20,17 @@
     color: @active;
   }
 }
+
+
+.button-style(@link, @visited, @focus, @hover, @active) {
+
+  background-color: @link;
+
+  &:focus {
+    background-color: @focus;
+  }
+
+  &:hover {
+    background-color: @hover;
+  }
+}

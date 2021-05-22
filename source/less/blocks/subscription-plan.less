@@ -1,13 +1,37 @@
 .subscription-plan {
+  padding-top: 127px;
   width: 100%;
+  background-color: @white;
+  background-image: url("../img/element/grey-background-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-position: 0 10px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 0 -60px;
+  }
+
 }
 
 .subscription-plan__wrapper {
   display: block;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100vw;
   overflow: auto;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .subscription-plan__table {
@@ -21,8 +45,12 @@
   width: 100%;
 
   @media (max-width: @mobile-width-only) {
-    width: 300vw;
-    transform: translateX(-33.33%);
+    width: 280vw;
+    transform: translateX(-32%);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 70px;
   }
 }
 

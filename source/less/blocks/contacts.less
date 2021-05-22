@@ -25,6 +25,7 @@
   line-height: 25px;
   display: grid;
   justify-items: center;
+  text-align: center;
 }
 
 .contacts__item--link {
@@ -35,4 +36,34 @@
   margin-bottom: 35px;
 }
 
-//.contacts__map {}
+.contacts__map {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  padding-top: 74px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 33px 50vw 0 50vw;
+    border-color: @white transparent transparent transparent;
+
+    @media (min-width: @tablet-width) {
+      border-width: 68px 50vw 0 50vw;
+    }
+
+    @media (min-width: @desktop-width) {
+      border-width: 123px 50vw 0 50vw;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+
+  }
+}

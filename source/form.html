@@ -12,8 +12,8 @@
         <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <picture>
-          <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40" alt="Приложение Пинк">
-          <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40" alt="Приложение Пинк">
+          <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40">
+          <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40">
           <img class="page-header__logo-image" src="img/element/logo-mobile.svg" width="74" height="23" alt="Приложение Пинк">
           </picture>
         </a>
@@ -40,16 +40,18 @@
           </div>
           </nav>
       </header>
-    <main class="inner-page">
+      <main class="inner-page">
       <div class="inner-page__wrapper">
       <div class="inner-page__header">
         <h1 class="inner-page__header-heading">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
       </div>
+      </div>
       <section class="form">
         <div class="form__wrapper">
-        <h2 class="form__inner-page-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <h2 class="form__inner-page-heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="inner-page-heading__text">Пожалуйста, заполните форму ниже:</span> </h2>
         <form class="form__form contest-form" action="https://echo.htmlacademy.ru." method="POST">
           <fieldset class="contest-form__section contest-form__section-personal">
+            <div class="contest-form__wrapper">
             <legend class="contest-form__heading visually-hidden">Персональные данные</legend>
             <div class="contest-form__text-item">
               <label class="contest-form__text-label" for="surname">Фамилия</label>
@@ -63,9 +65,11 @@
               <label class="contest-form__text-label" for="fathers-name">Отчество</label>
               <input class="contest-form__text-input" type="text" name="fathers-name" id="fathers-name" placeholder="Ну и отчество тоже">
             </div>
+          </div>
           </fieldset>
           <fieldset class="contest-form__section contest-form__section-travel">
-            <legend class="contest-form__heading">Ваши безбашенные достижения в путешествии</legend>
+            <div class="contest-form__wrapper">
+            <p class="contest-form__heading">Ваши безбашенные достижения в путешествии</p>
             <ul class="contest-form__checkbox-list">
               <li class="contest-list__checkbox-item">
                 <input class="contest-form__checkbox-input" type="checkbox" name="achievment" id="shark-selfie" value="Сделал селфи с акулой" checked>
@@ -92,20 +96,24 @@
                 <label for="hotel">Разгромил отель</label>
               </li>
             </ul>
+          </div>
           </fieldset>
           <fieldset class="contest-form__section contest-form__section-contact">
-            <legend class="contest-form__heading visually-hidden">Контактные данные</legend>
-            <p class="contest-form__text-item">
+            <div class="contest-form__wrapper">
+            <p class="contest-form__heading">контактная информация</p>
+            <p class="contest-form__text-item contest-form__text-item--phone">
               <label class="contest-form__text-label" for="phonenumber">Номер телефона</label>
               <input class="contest-form__text-input" type="tel" name="phonenumber" id="phonenumber" placeholder="Номер, пожалуйста">
             </p>
-            <p class="contest-form__text-item">
+            <p class="contest-form__text-item contest-form__text-item--adress">
               <label class="contest-form__text-label" for="email-adress">Адрес почты</label>
               <input class="contest-form__text-input" type="text" name="email-adress" id="email-adress" placeholder="Введите почту *">
             </p>
+            </div>
           </fieldset>
           <fieldset class="contest-form__section contest-form__section-app">
-            <legend class="contest-form__heading">С каким приложением путешествовали?</legend>
+            <div class="contest-form__wrapper">
+            <p class="contest-form__heading">С каким приложением путешествовали?</p>
             <ul class="contest-form__radio-list">
               <li class="contest-list__radio-item">
                 <input class="contest-form__radio-input" type="radio" name="pink-platform" id="pink-ios" value="Pink для iOS" checked>
@@ -120,27 +128,35 @@
                 <label for="pink-windows">Windows Phone</label>
               </li>
             </ul>
+          </div>
           </fieldset>
           <fieldset class="contest-form__section contest-form__section-emotions">
-            <legend class="contest-form__heading">Опишите свои эмоции</legend>
+            <div class="contest-form__wrapper">
+            <p class="contest-form__heading">Опишите свои эмоции</p>
               <p class="contest-form__text-item">
                 <label class="contest-form__text-label visually-hidden" for="comment">Эмоции</label>
                 <textarea class="contest-form__text-input" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </p>
+            </div>
           </fieldset>
-          <input class="form-button" type="submit" value="Отправить форму">
+          <div class="contest-form__wrapper">
+          <input class="form__button" type="submit" value="Отправить форму">
+          </div>
+          <p class="form__necessary-fields"><span class="form__necessary-fields-symbol">*</span> — обязательные поля</p>
         </form>
-        <p class="form__necessary-fields"><span class="form__necessary-fields-symbol">*</span> — обязательные поля</p>
       </div>
       </section>
-    </div>
     </main>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="footer-bottom">
           <div class="footer-bottom__wrapper">
             <a class="footer-bottom__logo">
-            <img class="footer-bottom__logo-image" src="img/element/logo-footer.svg" width="145" height="40" alt="Приложение Пинк">
+              <picture>
+                <source media="(min-width: 1080px)" srcset="img/element/logo-footer-desktop.svg" width="147" height="40">
+                <img class="footer-bottom__logo-image" src="img/element/logo-footer.svg" width="145" height="40" alt="Приложение Пинк">
+                </picture>
             </a>
             <div class="social-media">
               <ul class="social-medial__list">

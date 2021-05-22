@@ -4,18 +4,65 @@
   justify-items: center;
   margin-top: 0;
   width: 100%;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+  &::after {
+    content: "";
+    width: 79px;
+    height: 63px;
+    background-image: url(../../img/element/quotes-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    top: 72px;
+  }
 }
+}
+
 
 .reviews__wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 
 .reviews__list {
   list-style: none;
   padding: 0;
   margin: 50px 0 44px;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin: 193px 0 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      width: 22px;
+      height: 100%;
+      background-image: url(../../img/element/left-arrow.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 22px;
+      height: 100%;
+      background-image: url(../img/element/right-arrow.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 .reviews__item {
@@ -31,6 +78,15 @@
   order: 2;
   margin: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+  font-size: 18px;
+  line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 126px;
+  }
 }
 
 .reviews__person {
@@ -39,12 +95,28 @@
   line-height: 30px;
   font-style: normal;
   order: 1;
-}
 
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-top: 51px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+  font-size: 24px;
+  line-height: 30px;
+}
+}
 .reviews__person-description {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
-.reviews__toggles {
-  margin-bottom: 66px;
-}
+
