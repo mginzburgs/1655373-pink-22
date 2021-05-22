@@ -39,6 +39,19 @@
 
       .contest-form__text-input {
         width: 100%;
+
+        &:hover {
+          border-color: @darkblue;
+        }
+
+        &:active {
+          border-color: @red;
+        }
+
+        &:focus-visible {
+          outline: none;
+          border-color: @red;
+        }
       }
     }
   }

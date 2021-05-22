@@ -50,17 +50,33 @@
   }
 }
 
-@link: @white;
-@visited: @white;
-@focus: @red;
-@hover: @red;
-@active: fadeout((@link),70%);
-
 .main-nav__item a {
+  @link: @white;
+  @visited: @white;
+  @focus: @red;
+  @hover: @red;
+  @active: fadeout((@red),70%);
+
   .link-style(@link, @visited, @focus, @hover, @active);
+
+  @media (min-width: @desktop-width) {
+    @link: @white;
+    @visited: @white;
+    @focus: @red;
+    @hover: @red;
+    @active: fadeout((@link),70%);
+    .link-style(@link, @visited, @focus, @hover, @active);
+  }
 }
 
 .main-nav__item--active::after {
+
+  @link: @white;
+  @visited: @white;
+  @focus: @red;
+  @hover: @red;
+  @active: fadeout((@link),70%);
+
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;

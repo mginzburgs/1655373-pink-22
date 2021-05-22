@@ -17,6 +17,14 @@
   border: none;
   background-color: @slider-toggle;
   margin-right: 19px;
+
+  &:hover {
+    background-color: fade(@darkblue, 60%);
+  }
+
+  &:active {
+    background-color: fade(@darkblue, 10%);
+  }
 }
 
 .slider__toggle--current {

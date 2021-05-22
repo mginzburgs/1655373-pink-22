@@ -5,7 +5,6 @@
   grid-template-columns: 1fr;
   background-color: @darkblue;
   margin: 0 auto;
-  position: relative;
   margin-top: -66px;
   width: 100%;
   background-image: url("../img/element/back-mobile.jpg");
@@ -20,37 +19,65 @@
 
   @media (min-width: @tablet-width) {
     margin-top: -110px;
-    background-image: url("../img/element/back-tablet.jpg");
+    background-image: url("../img/element/back-tablet-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/element/back@2x-tablet.jpg");
+      background-image: url("../img/element/back@2x-tablet-1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: -110px;
-    background-image: url("../img/element/back-desktop.jpg");
+    background-image: url("../img/element/back-desktop-1.jpg");
+    background-size: 1200px;
+
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/element/back@2x-desktop.jpg");
+      background-image: url("../img/element/back@2x-desktop-1.jpg");
     }
   }
 }
 
-.downloads::after {
+
+.downloads__container::after {
   content: "";
   background-image: url("../img/elements/downloads_background.png");
-  background-size: 1200px 271px;
+  background-size: 100% 280px;
   background-repeat: no-repeat;
-  height: 271px;
+  height: 290px;
   width: 100%;
   align-self: flex-end;
   position: absolute;
   display: block;
-  z-index: -1;
+  bottom: 0;
+  z-index: 1;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+  @media (min-width: @mobile-width-only) {
+    height: 0;
+  }
+}
+
+.downloads__container::before {
+  @media (max-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/element/hand-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: translateY(110px);
+    z-index: 100;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/hand@2x-mobile.png");
+    }
   }
 }
 
@@ -61,11 +88,11 @@
 }
 
 .downloads__container {
+  position: relative;
   width: auto;
   justify-content: start;
   display: grid;
   max-width: 1200px;
-
 
   @media (max-width: @mobile-width-only) {
     justify-content: center;
@@ -99,63 +126,72 @@
   padding-top: 29px;
   margin: 0;
   height: 396px;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     padding-top: 102px;
     margin-bottom: 39px;
-    height: 127px;
+    height: auto;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 114px;
     margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
-.downloads__heading::after {
-  content: "";
-  display: block;
-  width: auto;
-  height: 286px;
-  background-image: url("../img/element/hand-mobile.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  margin-top: 34px;
-  transform: translateY(25px) translateX(-20px);
+// .downloads__heading::before  {
+//   position: absolute;
+//   content: "";
+//   display: block;
+//   width: auto;
+//   height: 286px;
+//   background-image: url("../img/element/hand-mobile.png");
+//   background-size: 100%;
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   margin-top: 34px;
+//   transform: translateY(429px) translateX(-20px);
+//   z-index: 100;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/element/hand@2x-mobile.png");
-  }
+//   @media (min-resolution: 2dppx) {
+//     background-image: url("../img/element/hand@2x-mobile.png");
+//   }
 
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    width: 660px;
-    height: 545px;
-    margin: 0;
-    transform: translateY(-85px) translateX(0);
-    z-index: -1;
-    background-image: url("../img/element/hand-tablet.png");
+//   @media (min-width: @tablet-width) {
+//     position: absolute;
+//     width: 660px;
+//     height: 545px;
+//     margin: 0;
+//     transform: translateY(-85px) translateX(0);
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/element/hand@2x-tablet.png");
-    }
-  }
+//     background-image: url("../img/element/hand-tablet.png");
 
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    width: 1050px;
-    height: 845px;
-    margin: 0;
-    transform: translateY(-70px) translateX(40px);
-    z-index: -1;
-    background-image: url("../img/element/hand-desktop.png");
+//     @media (min-resolution: 2dppx) {
+//       background-image: url("../img/element/hand@2x-tablet.png");
+//     }
+//   }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/element/hand@2x-desktop.png");
-    }
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     position: absolute;
+//     width: 1050px;
+//     height: 845px;
+//     margin: 0;
+//     transform: translateY(-70px) translateX(40px);
+
+//     background-image: url("../img/element/hand-desktop.png");
+
+//     @media (min-resolution: 2dppx) {
+//       background-image: url("../img/element/hand@2x-desktop.png");
+//     }
+//   }
+// }
 
 .downloads__description {
   font-weight: 300;
@@ -167,6 +203,7 @@
   display: block;
   margin-bottom: 38px;
   text-align: start;
+  z-index: 2;
 
   @media (max-width: @mobile-width-only) {
     text-align: center;
@@ -182,6 +219,18 @@
   width: 100%;
   height: 55px;
   line-height: 18px;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    background-color: @white;
+    color: @red;
+  }
+
+  &:active {
+    background-color: @white;
+    color: fade(@red, 30%);
+  }
 }
 
 .downloads__list {
@@ -195,6 +244,7 @@
   align-items: center;
   height: 56px;
   width: auto;
+  z-index: 20;
 }
 
 .downloads__list-item {
