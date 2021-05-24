@@ -4,6 +4,7 @@
   max-width: 1200px;
   display: block;
   position: relative;
+  z-index: 3;
 
 
   @media (min-width: @desktop-width) {
@@ -57,7 +58,9 @@
 }
 
 
-// .page-header__logo-image {}
+.page-header__logo-image img {
+  fill: red;
+}
 
 .page-header__main-nav-toggle {
   display: block;

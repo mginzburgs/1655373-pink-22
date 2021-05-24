@@ -1,17 +1,27 @@
 .advantages-list-item {
   text-align: center;
-  width: 280px;
   display: block;
+
+
 
   @media (min-width: @tablet-width) {
     width: 100%;
     text-align: start;
+    grid-column: 2 ;
+    padding-bottom: 34px;
+
+
+    &:first-child {
+      margin-top: 62px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
+    margin-top: 62px;
   }
 }
 
@@ -27,11 +37,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(40px);
-    z-index: -1;
+    z-index: 1;
     position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-hello@2x-desktop.png");
+    }
+
+        @media (min-width: @desktop-width) {
+      width: 186px;
+      height: 301px;
+      background-size: 100%;
+      transform: translateY(0);
     }
   }
 
@@ -46,11 +63,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(40px);
-    z-index: -1;
+    z-index: 1;
     position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-pink@2x-desktop.png");
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 186px;
+      height: 301px;
+      background-size: 100%;
+      transform: translateY(0);
     }
   }
 
@@ -64,25 +88,19 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(40px);
-    z-index: -1;
+    z-index: 1;
     position: relative;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/phone-bw@2x-desktop.png");
     }
+
+    @media (min-width: @desktop-width) {
+      width: 186px;
+      height: 301px;
+      background-size: 100%;
+      transform: translateY(0);
+    }
   }
 }
 
-@media (min-width: @desktop-width) {
-  .advantages-list-item::after {
-    content: "";
-    display: block;
-    width: 300px;
-    height: 17px;
-    position: absolute;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-    opacity: 0.3;
-    filter: blur(4px);
-    top: 375px;
-  }
-}

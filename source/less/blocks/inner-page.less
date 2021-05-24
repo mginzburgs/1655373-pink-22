@@ -12,16 +12,50 @@
   position: relative;
   margin-top: -66px;
   width: 100%;
-  background-image: url("../img/elements/inner_page_header__background.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 1200px;
-  z-index: -2;
-
-
+  // background-image: url("../img/element/inner_page_header__background.png");
+  // background-repeat: no-repeat;
+  // background-position: center top;
+  // background-size: 1200px;
+  // z-index: -2;
   @media (min-width: @tablet-width) {
     margin-top: -110px;
   }
+
+  background-image: url("../img/element/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  z-index: -2;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/element/back@2x-mobile.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    background-image: url("../img/element/back-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/back@2x-tablet.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -110px;
+    background-image: url("../img/element/back-desktop.jpg");
+    background-size: 1200px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/element/back@2x-desktop.jpg");
+    }
+  }
+
 }
 
 .inner-page__header {
@@ -29,16 +63,16 @@
   color: @white;
   justify-content: center;
   text-align: center;
-  height: 171px;
+  height: 237px;
 
 
   @media (min-width: @tablet-width) {
-    height: 330px;
+    height: 440px;
     transition: 0.3s;
   }
 
   @media (min-width: @desktop-width) {
-    height: 285px;
+    height: 394px;
     transition: 0.3s;
   }
 }
@@ -56,6 +90,8 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 81px;
+    font-size: 50px;
+    line-height: 68px;
   }
 
   @media (min-width: @desktop-width) {

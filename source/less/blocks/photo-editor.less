@@ -3,10 +3,31 @@
   width: 44px;
   height: 44px;
   background-image: url("../img/element/crop.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .photo-editor__slider {
-  display: none;
+  display: block;
+  height: 14px;
+  width: 240px;
+  position: absolute;
+  margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin: auto 0;
+  }
 }
 
 .photo-editor__slider--active {
@@ -21,6 +42,19 @@
   width: 48px;
   height: 43px;
   background-image: url("../img/element/fill.svg");
+
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .photo-editor__icon-contrast {
@@ -28,4 +62,32 @@
   width: 32px;
   height: 32px;
   background-image: url("../img/element/contrast.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+  }
+}
+
+.photo-editor {
+  @media (min-width: @tablet-width){
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 25px;
+  justify-content: space-between;
+  min-width: 277px ;
+  width: 100%;
+  border-bottom: 1px solid fade(@darkblue, 10%);
+  padding: 25px 0;
+
+
+}
 }

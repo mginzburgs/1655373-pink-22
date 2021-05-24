@@ -10,11 +10,12 @@
   border: solid 3px @white;
   border-radius: 29px;
   box-sizing: border-box;
+  margin: auto auto;
 }
 
 .button--upload-catalog {
   width: 280px;
-  padding: 21px 90px;
+  padding: 16px 0;
   color: @red;
   border: solid 3px @red;
 
@@ -26,11 +27,19 @@
   &:active {
     color: fade(@white, 30%);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 
 .button--reset-catalog {
   width: 280px;
-  padding: 21px 90px;
+  padding: 16px 0;
   color: fade(@darkblue, 10%);
   border: solid 3px  fade(@darkblue, 10%);
 
@@ -45,5 +54,13 @@
     background-color: fade(@darkblue, 30%);
     border: solid 3px fade(@darkblue, 30%);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
   }
 }

@@ -8,6 +8,10 @@
   @media (min-width: @tablet-width) {
     height: 127px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 197px;
+  }
 }
 
 .footer-bottom__wrapper {
@@ -22,6 +26,11 @@
     grid-template-columns: max-content auto max-content;
     justify-items: center;
     transition: 0.5s;
+    padding: 0 20px;
+
+    @media (min-width: @desktop-width) {
+      padding: 0 130px;
+    }
   }
 }
 

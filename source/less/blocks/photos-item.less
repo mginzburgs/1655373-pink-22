@@ -3,13 +3,17 @@
 .photos-item {
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
   max-height: 555px;
   background-color: @background-grey;
   text-align: start;
 
   @media (max-width: @mobile-width-only) {
     margin: 0 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
   }
 }
 
@@ -35,7 +39,11 @@
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-template-rows: auto auto auto;
-  padding: 25px 0 25px 17px;
+  padding: 18px 0 10px 17px;
+
+  @media (min-width: @tablet-width){
+    padding: 24px 0 13px 17px;
+  }
 }
 
 .photos-item__comment-person {
@@ -57,6 +65,7 @@
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  padding-right: 20px;
 }
 
 .photos-item__like-counter {
@@ -74,6 +83,7 @@
   line-height: 24px;
   color: @red;
   margin-left: 18px;
+  text-transform: uppercase;
 }
 
 .photos-item__comment-time {
@@ -82,4 +92,5 @@
   font-size: 12px;
   line-height: 24px;
   margin: 0;
+  text-transform: uppercase;
 }

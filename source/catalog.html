@@ -1,223 +1,244 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body class="page__body">
-    <div class="page__container">
-      <header class="page-header page-header--main-nav-closed">
-        <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
-          <picture>
-          <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40" alt="Приложение Пинк">
-          <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40" alt="Приложение Пинк">
-          <img class="page-header__logo-image" src="img/element/logo-mobile.svg" width="74" height="23" alt="Приложение Пинк">
-          </picture>
-        </a>
-        <button class="page-header__main-nav-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item main-nav__item--active">
-                <a href="catalog.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-          </nav>
-      </header>
-    <main class="inner-page">
-      <div class="inner-page__wrapper">
-      <div class="inner-page__header">
-        <h1 class="inner-page__header-heading">Фотографии<br>пользователей</h1>
-      </div>
-      </div>
-      <section class="photos">
-        <div class="photos__wrapper">
-          <h2 class="photos__heading">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
-          <div class="photos__panorama photos-panorama">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/panorama-desktop.jpg 1x, img/content/panorama@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/panorama-tablet.jpg 1x, img/content/panorama@2x-tablet.jpg  2x">
-                <img class="photos-panorama__photo" src="img/content/panorama-mobile.jpg" srcset="img/content/panorama@2x-mobile.jpg 2x" width="320" height="137" alt="панорама гор">
-              </picture>
-              <div class="photos-panorama__wrapper">
-              <div class="photos-panorama__comment">
-                <cite class="photos-panorama__comment-person">Анна</cite><p class="photos-item__comment-time">(5 минут назад)</p>
-                <p class="photos-panorama__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </div>
-              <div class="photos-panorama__like-counter">
-              <a href="#" class="photos-panorama__like-counter-text">Нравится: 215</a><img class="photos-panorama__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-              </div>
-          </div>
-          <div class="photos__list-container">
-          <ul class="photos__list">
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1@2x-mobile.jpg 2x" width="280" height="180" alt="машина">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Левон</cite><p class="photos-item__comment-time">(5 часов назад)</p>
-                <p class="photos-item__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 356</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-2-mobile.jpg" srcset="img/content/photo-2@2x-mobile.jpg 2x" width="280" height="180" alt="барабаны">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Антон</cite><p class="photos-item__comment-time">(12 часов назад)</p>
-                <p class="photos-item__comment-text">Соседи будут рады!</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 666</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-3-mobile.jpg" srcset="img/content/photo-3@2x-mobile.jpg 2x" width="280" height="180" alt="окна">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Борис</cite><p class="photos-item__comment-time">(20 часов назад)</p>
-                <p class="photos-item__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 215</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-4-mobile.jpg" srcset="img/content/photo-4@2x-mobile.jpg 2x" width="280" height="180" alt="кубанская бахча">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Сергей</cite><p class="photos-item__comment-time">(25 часов назад)</p>
-                <p class="photos-item__comment-text">Самая кубанская в мире!</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 4</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-5-desktop.jpg 1x, img/content/photo-5@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-5-tablet.jpg 1x, img/content/photo-5@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-5-mobile.jpg" srcset="img/content/photo-5@2x-mobile.jpg 2x" width="280" height="180" alt="обрыв">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Максим</cite><p class="photos-item__comment-time">(5 часов назад)</p>
-                <p class="photos-item__comment-text">Где снег-то?</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 150</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-            <li class="photos__item photos-item">
-              <picture>
-                <source media="(min-width: 1080px)" srcset="img/content/photo-6-desktop.jpg 1x, img/content/photo-6@2x-desktop.jpg  2x">
-                <source media="(min-width: 660px)" srcset="img/content/photo-6-tablet.jpg 1x, img/content/photo-6@2x-tablet.jpg  2x">
-                <img class="photos-item__photo" src="img/content/photo-6-mobile.jpg" srcset="img/content/photo-6@2x-mobile.jpg 2x" width="280" height="180" alt="самолет">
-              </picture>
-              <div class="photos-item__comment">
-                <cite class="photos-item__comment-person">Надежда</cite><p class="photos-item__comment-time">(45 часов назад)</p>
-                <p class="photos-item__comment-text">Всем GM и взаимные лайки!</p>
-              </div>
-              <div class="photos-item__like-counter">
-              <a href="#" class="photos-item__like-counter-text">Нравится: 2560</a><img class="photos-item__like-counter-image" src="img/elements/like_heart.svg" width="13" height="12" alt="лайк">
-              </div>
-            </li>
-          </ul>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io//apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io//favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+        <title>HTML Academy: Пинк</title>
+    </head>
+    <body class="page__body">
+        <div class="page__container">
+            <header class="page-header page-header--main-nav-closed">
+                <div class="page-header__wrapper">
+                    <a href="index.html" class="page-header__logo">
+                        <picture>
+                            <source media="(min-width: 1080px)" srcset="img/element/logo-desktop.svg" width="147" height="40" alt="Приложение Пинк" />
+                            <source media="(min-width: 660px)" srcset="img/element/logo-tablet.svg" width="145" height="40" alt="Приложение Пинк" />
+                            <img class="page-header__logo-image" src="img/element/logo-mobile.svg" width="74" height="23" alt="Приложение Пинк" />
+                        </picture>
+                    </a>
+                    <button class="page-header__main-nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                </div>
+                <nav class="main-nav">
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                            <li class="main-nav__item main-nav__item--active"><a href="catalog.html">Фотографии</a></li>
+                            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main class="inner-page">
+                <div class="inner-page__wrapper">
+                    <div class="inner-page__header">
+                        <h1 class="inner-page__header-heading">
+                            Фотографии<br />
+                            пользователей
+                        </h1>
+                    </div>
+                </div>
+                <section class="photos">
+                    <div class="photos__wrapper">
+                        <h2 class="photos__heading">
+                            Взгляните на фотографии, которые выкладывают пользователи!<br />
+                            Видите, как не хватает ваших?
+                        </h2>
+                        <div class="photos__panorama photos-panorama">
+                            <picture>
+                                <source media="(min-width: 1080px)" srcset="img/content/panorama-desktop.jpg, img/content/panorama@2x-desktop.jpg 2x" />
+                                <source media="(min-width: 660px)" srcset="img/content/panorama-tablet.jpg, img/content/panorama@2x-tablet.jpg 2x" />
+                                <img class="photos-panorama__photo" src="img/content/panorama-mobile.jpg" srcset="img/content/panorama@2x-mobile.jpg 2x" width="320" height="137" alt="панорама гор" />
+                            </picture>
+                            <div class="photos-panorama__wrapper">
+                                <div class="photos-panorama__comment">
+                                    <cite class="photos-panorama__comment-person">Анна</cite>
+                                    <p class="photos-panorama-time">(5 минут назад)</p>
+                                    <p class="photos-panorama__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                                <div class="photos-panorama__like-counter">
+                                    <a href="#" class="photos-panorama__like-counter-text">Нравится: 215</a><img class="photos-panorama__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="photos__list-container">
+                            <ul class="photos__list">
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-1-desktop.jpg, img/content/photo-1@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-1-tablet.jpg, img/content/photo-1@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1@2x-mobile.jpg 2x" width="280" height="180" alt="машина" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Левон</cite>
+                                        <p class="photos-item__comment-time">(5 часов назад)</p>
+                                        <p class="photos-item__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 356</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-2-desktop.jpg, img/content/photo-2@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-2-tablet.jpg, img/content/photo-2@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-2-mobile.jpg" srcset="img/content/photo-2@2x-mobile.jpg 2x" width="280" height="180" alt="барабаны" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Антон</cite>
+                                        <p class="photos-item__comment-time">(12 часов назад)</p>
+                                        <p class="photos-item__comment-text">Соседи будут рады!</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 666</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-3-desktop.jpg, img/content/photo-3@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-3-tablet.jpg, img/content/photo-3@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-3-mobile.jpg" srcset="img/content/photo-3@2x-mobile.jpg 2x" width="280" height="180" alt="окна" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Борис</cite>
+                                        <p class="photos-item__comment-time">(20 часов назад)</p>
+                                        <p class="photos-item__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 215</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-4-desktop.jpg, img/content/photo-4@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-4-tablet.jpg, img/content/photo-4@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-4-mobile.jpg" srcset="img/content/photo-4@2x-mobile.jpg 2x" width="280" height="180" alt="кубанская бахча" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Сергей</cite>
+                                        <p class="photos-item__comment-time">(25 часов назад)</p>
+                                        <p class="photos-item__comment-text">Самая кубанская в мире!</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 4</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-5-desktop.jpg, img/content/photo-5@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-5-tablet.jpg, img/content/photo-5@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-5-mobile.jpg" srcset="img/content/photo-5@2x-mobile.jpg 2x" width="280" height="180" alt="обрыв" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Максим</cite>
+                                        <p class="photos-item__comment-time">(5 часов назад)</p>
+                                        <p class="photos-item__comment-text">Где снег-то?</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 150</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                                <li class="photos__item photos-item">
+                                    <picture>
+                                        <source media="(min-width: 1080px)" srcset="img/content/photo-6-desktop.jpg, img/content/photo-6@2x-desktop.jpg 2x" />
+                                        <source media="(min-width: 660px)" srcset="img/content/photo-6-tablet.jpg, img/content/photo-6@2x-tablet.jpg 2x" />
+                                        <img class="photos-item__photo" src="img/content/photo-6-mobile.jpg" srcset="img/content/photo-6@2x-mobile.jpg 2x" width="280" height="180" alt="самолет" />
+                                    </picture>
+                                    <div class="photos-item__comment">
+                                        <cite class="photos-item__comment-person">Надежда</cite>
+                                        <p class="photos-item__comment-time">(45 часов назад)</p>
+                                        <p class="photos-item__comment-text">Всем GM и взаимные лайки!</p>
+                                    </div>
+                                    <div class="photos-item__like-counter">
+                                        <a href="#" class="photos-item__like-counter-text">Нравится: 2560</a><img class="photos-item__like-counter-image" src="img/element/heart.svg" width="13" height="12" alt="лайк" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="photos__footer">
+                        Затмите их всех!<br />
+                        Выкладывайте все, что накопилось в телефоне!
+                    </p>
+                </section>
+                <section class="photo-upload">
+                    <div class="photo-upload__wrapper">
+                        <form class="photo-upload__form" action="https://echo.htmlacademy.ru." method="POST">
+                            <picture>
+                                <source media="(min-width: 1080px)" srcset="img/content/photo-7-desktop.jpg, img/content/photo-7@2x-desktop.jpg" />
+                                <source media="(min-width: 660px)" srcset="img/content/photo-7-tablet.jpg, img/content/photo-7@2x-tablet.jpg" />
+                                <img class="photo-upload__picture" src="img/content/photo-7-mobile.jpg" srcset="img/content/photo-7@2x-mobile.jpg" width="280" height="374" alt="заснеженная дорога" />
+                            </picture>
+                            <input class="photo-upload__upload" type="file" name="photo-upload" id="photo-upload" /> <label for="photo-upload"></label>
+                            <div class="photo-upload__controls-container">
+                            <ul class="photo-upload__editor-list">
+                                <li class="photo-upload__editor-item photo-editor">
+                                    <a class="photo-editor__icon-crop photo-editor__icon--active"><span class="visually-hidden">Вырезать</span></a>
+                                    <div class="photo-editor__slider range range--crop">
+                                      <div class="range__base">
+                                        <div class="range__bar"> </div>
+                                          <div class="range__toggle range__toggle--crop"></div>
+                                      </div>
+                                        </div>
+                                </li>
+                                <li class="photo-upload__editor-item photo-editor">
+                                    <a class="photo-editor__icon-fill"><span class="visually-hidden">Заливка</span></a>
+                                    <div class="photo-editor__slider range range--fill">
+                                      <div class="range__base">
+                                        <div class="range__bar"> </div>
+                                          <div class="range__toggle range__toggle--fill"></div>
+                                      </div>
+                                        </div>
+                                </li>
+                                <li class="photo-upload__editor-item photo-editor">
+                                    <a class="photo-editor__icon-contrast"><span class="visually-hidden">Контраст</span></a>
+                                    <div class="photo-editor__slider range range--contrast">
+                                      <div class="range__base">
+                                        <div class="range__bar"> </div>
+                                          <div class="range__toggle range__toggle--contrast"></div>
+                                      </div>
+                                        </div>
+                                </li>
+                            </ul>
+                            <div class="photo-upload__buttons">
+                                <button class="button button--upload-catalog" type="submit" value="upload">Запостить</button> <button class="button button--reset-catalog" type="reset" value="reset">Отмена</button>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
         </div>
-        </div>
-        <p class="photos__footer">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
-      </section>
-      <section class="photo-upload">
-        <div class="photo-upload__wrapper">
-          <form class="photo-upload__form" action="https://echo.htmlacademy.ru." method="POST">
-            <picture>
-              <source media="(min-width: 1080px)" srcset="img/content/photo-7-desktop.jpg 1x, img/content/photo-7@2x-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/content/photo-7-tablet.jpg 1x, img/content/photo-7@2x-tablet.jpg">
-              <img class="photo-upload__picture" src="img/content/photo-7-mobile.jpg" srcset="img/content/photo-7@2x-mobile.jpg" width="280" height="374" alt="заснеженная дорога">
-            </picture>
-            <input class="photo-upload__upload" type="file" name="photo-upload" id="photo-upload">
-            <label for="photo-upload"></label>
-            <ul class="photo-upload__editor-list">
-                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon-crop photo-editor__icon--active"><span class="visually-hidden">Вырезать</span></a>
-                  <input class="photo-editor__slider photo-editor__slider--active" type="range" min="1" max="100" value="70" id="slider-crop">
-                  <label for="slider-crop"></label>
-                </li>
-                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon-fill"><span class="visually-hidden">Заливка</span></a>
-                  <input class="photo-editor__slider" type="range" min="1" max="100" value="20" id="slider-fill">
-                  <label for="slider-fill"></label>
-                </li>
-                <li class="photo-upload__editor-item photo-editor"><a class="photo-editor__icon-contrast"><span class="visually-hidden">Контраст</span></a>
-                  <input class="photo-editor__slider" type="range" min="1" max="100" value="60" id="slider-contrast">
-                  <label for="slider-contrast"></label>
-                </li>
-            </ul>
-            <div class="photo-upload__buttons">
-            <button class="button button--upload-catalog" type="submit" value="upload">Запостить</button>
-            <button class="button button--reset-catalog" type="reset" value="reset">Отмена</button>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+              <section class="footer-bottom">
+                <div class="footer-bottom__wrapper">
+                    <a class="footer-bottom__logo">
+                      <picture>
+                        <source media="(min-width: 1080px)" srcset="img/element/logo-footer-desktop.svg" width="147" height="40" alt="Приложение Пинк" />
+                        <img class="footer-bottom__logo-image" src="img/element/logo-footer.svg" width="145" height="40" alt="Приложение Пинк" />
+                      </picture>
+                    </a>
+                    <div class="social-media">
+                        <ul class="social-medial__list">
+                            <li class="social-media__item"><a class="social-media__button social-media__button--twitter" href="https://twitter.com"></a></li>
+                            <li class="social-media__item"><a class="social-media__button social-media__button--facebook" href="https://facebook.com"></a></li>
+                            <li class="social-media__item"><a class="social-media__button social-media__button--youtube" href="https://youtube.com"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom__developer-info">
+                        <p>Разработано</p>
+                        <a href="https://htmlacademy.ru/intensive/adaptive"><img class="developer-info__logo" src="img/element/html_academy.svg" width="27" height="34" alt="HTML academy" /></a>
+                    </div>
+                </div>
+            </section>
             </div>
-          </form>
-        </div>
-      </section>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-      <section class="footer-bottom">
-        <section class="footer-bottom">
-          <div class="footer-bottom__wrapper">
-            <a class="footer-bottom__logo">
-            <img class="footer-bottom__logo-image" src="img/element/logo-footer.svg" width="145" height="40" alt="Приложение Пинк">
-            </a>
-            <div class="social-media">
-              <ul class="social-medial__list">
-                <li class="social-media__item">
-                  <a class="social-media__button social-media__button--twitter" href="https://twitter.com"></a>
-                </li>
-                <li class="social-media__item">
-                  <a class="social-media__button social-media__button--facebook" href="https://facebook.com"></a>
-                </li>
-                <li class="social-media__item">
-                  <a class="social-media__button social-media__button--youtube" href="https://youtube.com"></a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-bottom__developer-info">
-              <p>Разработано</p>
-              <a href="https://htmlacademy.ru/intensive/adaptive"><img class="developer-info__logo" src="img/elements/html_academy.svg" width="27" height="34" alt="HTML academy"></a>
-            </div>
-          </div>
-        </section>
-        </div>
-      </footer>
-  </body>
-  <script src="js/script.js"></script>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
 </html>
+

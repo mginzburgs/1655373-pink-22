@@ -12,6 +12,7 @@
   background-position: center top;
   background-size: 100%;
   z-index: -2;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/element/back@2x-mobile.jpg");
@@ -46,9 +47,9 @@
 .downloads__container::after {
   content: "";
   background-image: url("../img/elements/downloads_background.png");
-  background-size: 100% 280px;
+  background-size: 100% 271px;
   background-repeat: no-repeat;
-  height: 290px;
+  height: 271px;
   width: 100%;
   align-self: flex-end;
   position: absolute;
@@ -62,7 +63,9 @@
 }
 
 .downloads__container::before {
-  @media (max-width: @tablet-width) {
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
     position: absolute;
     content: "";
     display: block;
@@ -74,6 +77,7 @@
     background-position: bottom;
     transform: translateY(110px);
     z-index: 100;
+    justify-self: flex-start;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/element/hand@2x-mobile.png");
@@ -85,6 +89,10 @@
   margin: 66px auto 0;
   width: 100%;
   max-width: 1200px;
+
+  @media (min-width: @tablet-width) {
+    margin: 110px auto 0
+  }
 }
 
 .downloads__container {
@@ -92,10 +100,12 @@
   width: auto;
   justify-content: start;
   display: grid;
-  max-width: 1200px;
+
+
 
   @media (max-width: @mobile-width-only) {
     justify-content: center;
+    justify-items: center;
   }
 
   @media (min-width: @tablet-width) {
@@ -123,13 +133,14 @@
   line-height: 120%;
   width: 300px;
   text-align: center;
-  padding-top: 29px;
+  padding: 29px 0 0 0;
   margin: 0;
   height: 396px;
   position: relative;
   z-index: 1;
 
   @media (min-width: @tablet-width) {
+    font-style: normal;
     padding-top: 102px;
     margin-bottom: 39px;
     height: auto;
@@ -139,7 +150,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 114px;
     margin-bottom: 51px;
     font-size: 50px;
     line-height: 68px;
@@ -198,20 +208,29 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  max-width: 300px;
   padding: 0;
-  width: 280px;
   display: block;
   margin-bottom: 38px;
   text-align: start;
   z-index: 2;
+  max-width: 300px;
+  text-align: center;
 
   @media (max-width: @mobile-width-only) {
     text-align: center;
+    height: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    font-size: 18px;
+  line-height: 24px;
   }
 }
 
 .downloads__button {
-  max-width: 300px;
+  max-width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +250,10 @@
     background-color: @white;
     color: fade(@red, 30%);
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .downloads__list {
@@ -245,6 +268,10 @@
   height: 56px;
   width: auto;
   z-index: 20;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .downloads__list-item {

@@ -22,7 +22,7 @@
   line-height: 36px;
   padding-left: 72px;
   padding-bottom: 24px;
-  margin: 120px 0 0;
+  margin: 100px 0 0;
 
   @media (min-width: @desktop-width) {
     padding-bottom: 37px;
@@ -57,11 +57,19 @@
   font-size: 14px;
   line-height: 24px;
   padding-left: 72px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   margin: 0;
 }
 
 .banner__text-link {
   grid-area: banner-link;
   padding-left: 72px;
+  color: @red;
+  cursor: pointer;
+
+  &:hover {
+    color: @black;
+    text-decoration: none;
+  }
 }
+

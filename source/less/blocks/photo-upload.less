@@ -1,10 +1,21 @@
 .photo-upload {
   background-color: @block-background-grey;
   padding-top: 20px;
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+}
 }
 
 .photo-upload__wrapper {
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
 }
 
 .photo-upload__form {
@@ -12,12 +23,22 @@
   grid-template-columns: 1fr;
   padding-bottom: 41px;
   justify-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }
 
 .photo-upload__picture {
-  width: 100;
   max-width: 300px;
-  margin-bottom: 42px;
+
+
+  @media (min-width: @tablet-width) {
+  margin-bottom: 0px;
+  grid-row: auto;
+  height: 400px;
+}
 }
 
 .photo-upload__upload {
@@ -30,13 +51,42 @@
   margin-bottom: 114px;
   padding: 0;
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 67px;
+  }
 }
 
 .photo-upload__editor-item {
   margin-right: 35px;
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .photo-upload__buttons {
   display: grid;
   row-gap: 12px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr ;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-content: space-around;
+  }
+}
+
+.photo-upload__controls-container {
+  @media (min-width: @tablet-width) {
+    grid-row: 1 ;
+    grid-column: 2 / -1;
+    width: 100%;
+  }
 }

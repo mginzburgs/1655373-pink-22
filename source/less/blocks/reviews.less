@@ -5,9 +5,11 @@
   margin-top: 0;
   width: 100%;
   position: relative;
+  margin-top: -43px;
 
   @media (min-width: @desktop-width) {
     &::after {
+      margin-top: 0;
       content: "";
       width: 79px;
       height: 63px;
@@ -26,16 +28,20 @@
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+}
 }
 
 .reviews__list {
   list-style: none;
-  padding: 0;
-  margin: 50px 0 44px;
+  padding: 50px 0 32px;
   position: relative;
+  margin: 0;
 
   @media (min-width: @desktop-width) {
-    margin: 193px 0 44px;
+    margin: 193px 0 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -82,6 +88,7 @@
   order: 2;
   margin: 0;
   text-align: center;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -99,12 +106,14 @@
   line-height: 30px;
   font-style: normal;
   order: 1;
+  padding: 0 0 21px 0;
 
   @media (min-width: @tablet-width) {
     order: 2;
     margin-top: 51px;
     font-size: 20px;
     line-height: 30px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -121,5 +130,6 @@
     order: 3;
     font-size: 14px;
     line-height: 30px;
+    margin: 0;
   }
 }
