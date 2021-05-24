@@ -2,14 +2,11 @@
   text-align: center;
   display: block;
 
-
-
   @media (min-width: @tablet-width) {
     width: 100%;
     text-align: start;
-    grid-column: 2 ;
+    grid-column: 2;
     padding-bottom: 34px;
-
 
     &:first-child {
       margin-top: 62px;
@@ -24,7 +21,6 @@
     margin-top: 62px;
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .advantages-list-item:last-child::before {
@@ -44,14 +40,13 @@
       background-image: url("../img/element/phone-hello@2x-desktop.png");
     }
 
-        @media (min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
       width: 186px;
       height: 301px;
       background-size: 100%;
       transform: translateY(0);
     }
   }
-
 
   .advantages-list-item:nth-child(2)::before {
     margin: 0 auto;
@@ -103,4 +98,3 @@
     }
   }
 }
-
