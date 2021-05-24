@@ -37,7 +37,19 @@
 .footer-bottom__logo {
   grid-column: 1/2;
 }
-//.footer-bottom__logo-image {}
+
+.footer-bottom__logo-image {
+  &:active {
+    opacity: 30%;
+  }
+  fill: @darkblue;
+
+  &:hover {
+    fill: @red;
+  }
+}
+
+
 
 .footer-bottom__developer-info {
   font-style: normal;

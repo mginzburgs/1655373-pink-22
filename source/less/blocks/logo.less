@@ -1,0 +1,60 @@
+
+
+.logo__desktop {
+  display: none;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%)
+  }
+
+  @media (min-width: @desktop-width) {
+  display: block;
+  width: 147px;
+  height: 40px;
+}
+}
+
+
+.logo__glasses {
+  display: none;
+
+@media (min-width: @tablet-width) {
+  display: block;
+  width: 145px;
+  height: 40px;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%)
+  }
+}
+@media (min-width: @desktop-width) {
+  display: none;
+}
+}
+
+.logo__text {
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%)
+  }
+
+  display: none;
+  @media (max-width: @mobile-width-only) {
+
+  display: block;
+  width: 74px;
+  height: 23px;
+}
+}

@@ -1,5 +1,4 @@
 .page-header {
-  background-color: fade(@black, 30%);
   margin: 0 auto;
   max-width: 1200px;
   display: block;
@@ -57,10 +56,20 @@
   }
 }
 
-
-.page-header__logo-image img {
-  fill: red;
+.page-header__logo {
+  text-align: start;
 }
+
+
+.page-header__logo-image  {
+  text-align: start;
+  fill: @white;
+
+  @media(max-width: @mobile-width-only){
+    padding-top: 15px;
+  }
+}
+
 
 .page-header__main-nav-toggle {
   display: block;
