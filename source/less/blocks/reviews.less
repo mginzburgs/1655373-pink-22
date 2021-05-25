@@ -35,12 +35,16 @@
 
 .reviews__list {
   list-style: none;
-  padding: 50px 0 32px;
+  padding: 42px 0 26px;
   position: relative;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 32px 0 0 0;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 193px 0 32px;
+    margin: 154px 0 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -105,11 +109,11 @@
   line-height: 30px;
   font-style: normal;
   order: 1;
-  padding: 0 0 21px 0;
+  padding: 0 0 14px 0;
 
   @media (min-width: @tablet-width) {
     order: 2;
-    margin-top: 51px;
+    margin-top: 36px;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
@@ -129,6 +133,11 @@
     order: 3;
     font-size: 14px;
     line-height: 30px;
-    margin: 0;
+    margin: 0 0 30px;
+
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 }

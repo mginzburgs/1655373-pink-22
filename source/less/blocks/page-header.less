@@ -8,6 +8,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 100px 1fr;
+    grid-template-rows: 110px;
   }
 }
 
@@ -21,8 +22,9 @@
   padding: 0 20px;
 
   @media (min-width: @desktop-width) {
-    padding-left: 96px;
-    padding-right: 0;
+    padding: 0;
+    display: block;
+    margin: 0 130px;
   }
 }
 
@@ -58,14 +60,60 @@
 
 .page-header__logo {
   text-align: start;
+  fill: @white;
+  width: max-content;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
+  }
+
+  .page-header__logo-image--mobile {
+    width: 74px;
+    height: 23px;
+  }
+
+  .page-header__logo-image--tablet {
+    display: none;
+  }
+
+  .page-header__logo-image--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .page-header__logo-image--mobile {
+      display: none;
+    }
+
+    .page-header__logo-image--tablet {
+      display: block;
+      width: 145px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .page-header__logo-image--tablet {
+      display: none;
+    }
+
+    .page-header__logo-image--desktop {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
+  }
 }
 
-
-.page-header__logo-image  {
+.page-header__logo-image {
   text-align: start;
   fill: @white;
 
-  @media(max-width: @mobile-width-only){
+  @media (max-width: @mobile-width-only) {
     padding-top: 15px;
   }
 }

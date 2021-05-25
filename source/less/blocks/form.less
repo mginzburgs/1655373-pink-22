@@ -11,6 +11,11 @@
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }
 
 .form__inner-page-heading {
@@ -36,6 +41,10 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 46px auto 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0 auto;
+  }
 }
 
 .form__necessary-fields-symbol {

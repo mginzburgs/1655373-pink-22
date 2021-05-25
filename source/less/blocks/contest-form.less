@@ -3,7 +3,7 @@
   grid-template-columns: auto;
   grid-template-rows: auto;
   width: 100%;
-  align-items: center;
+  align-items: cemter;
   grid-template-areas:
     "personal"
     "application"
@@ -58,18 +58,19 @@
 
   @media (min-width: @desktop-width) {
     .contest-form__wrapper {
-      margin: 0 0 0 130px;
+      width: 100%;
     }
   }
 }
 
 .contest-form__section-app {
   grid-area: application;
+}
 
-  @media (min-width: @desktop-width) {
-    .contest-form__wrapper {
-      margin: 0 130px 0 0;
-    }
+.contest-form__section-border {
+  @media (min-width: @tablet-width) {
+    border: 2px solid @grey;
+    align-content: center;
   }
 }
 
@@ -165,7 +166,7 @@
 //.contest-form {}
 
 .contest-form__section {
-  margin: 0;
+  margin: 0 0 65px 0;
   padding: 0;
   border: none;
   width: 100%;
@@ -181,8 +182,8 @@
 .contest-form__wrapper {
   margin: 0 20px;
 
-  @media (min-width: @desktop-width) {
-    margin: 0 130px;
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
 
@@ -192,7 +193,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @red;
-  padding-top: 42px;
   text-align: center;
   margin: 0 0 44px;
 }
@@ -288,6 +288,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: start;
 }
 
 .contest-list__radio-item {
@@ -337,4 +338,15 @@
   border-radius: 50%;
   left: 11px;
   top: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-form__heading {
+    background-color: @white;
+    width: 318px;
+    margin: -10px auto 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 61px;
+  }
 }

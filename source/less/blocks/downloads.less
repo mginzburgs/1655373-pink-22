@@ -130,16 +130,16 @@
   line-height: 120%;
   width: 300px;
   text-align: center;
-  padding: 29px 0 0 0;
+  padding: 24px 0 0 0;
   margin: 0;
-  height: 396px;
+  height: 400px;
   position: relative;
   z-index: 1;
 
   @media (min-width: @tablet-width) {
     font-style: normal;
-    padding-top: 102px;
-    margin-bottom: 39px;
+    padding-top: 94px;
+    margin-bottom: 32px;
     height: auto;
     font-weight: 300;
     font-size: 40px;
@@ -147,9 +147,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 51px;
+    margin-bottom: 40px;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 98px;
   }
 }
 
@@ -209,7 +210,6 @@
   padding: 0;
   display: block;
   margin-bottom: 38px;
-  text-align: start;
   z-index: 2;
   text-align: center;
 
@@ -218,10 +218,15 @@
     height: 34px;
   }
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   @media (min-width: @desktop-width) {
     text-align: center;
     font-size: 18px;
-  line-height: 24px;
+    line-height: 24px;
   }
 }
 
@@ -237,6 +242,7 @@
   cursor: pointer;
   z-index: 2;
 
+
   &:hover {
     background-color: @white;
     color: @red;
@@ -247,8 +253,12 @@
     color: fade(@red, 30%);
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 66px;
   }
 }
 
@@ -264,6 +274,10 @@
   height: 56px;
   width: auto;
   z-index: 20;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;

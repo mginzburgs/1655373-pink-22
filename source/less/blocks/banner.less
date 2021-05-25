@@ -1,8 +1,10 @@
 .banner__wrapper {
+  text-align: start;
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
   grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content max-content max-content;
   padding: 0 20px;
   justify-content: start;
   grid-template-areas:
@@ -21,11 +23,12 @@
   font-size: 30px;
   line-height: 36px;
   padding-left: 72px;
-  padding-bottom: 24px;
-  margin: 100px 0 0;
+  padding-bottom: 0;
+  margin: 96px 0 0;
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 37px;
+    margin: 128px 0 0;
+    padding-bottom: 0;
   }
 }
 
@@ -56,9 +59,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 72px;
-  padding-bottom: 12px;
-  margin: 0;
+  padding: 0 0 0 72px;
+  margin: 0 0 8px 0;
+
+  @media (min-width: @desktop-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .banner__text-link {
@@ -70,5 +78,10 @@
   &:hover {
     color: @black;
     text-decoration: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
