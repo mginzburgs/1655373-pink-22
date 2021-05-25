@@ -74,12 +74,22 @@
   row-gap: 12px;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-direction: row;
     align-content: space-around;
+
+    button {
+      margin-right: 44px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
