@@ -16,6 +16,11 @@
     padding: 0 20px;
     margin: 0 auto;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+    margin: 0 auto;
+  }
 }
 
 .form__inner-page-heading {
@@ -27,11 +32,13 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 90px 60px 74px;
     font-size: 18px;
     line-height: 30px;
+    padding: 0;
   }
 }
 
@@ -76,12 +83,12 @@
 
   &:hover {
     background-color: @green-hover;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   &:active {
     color: fade(@white, 30%);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 
   &:disabled {

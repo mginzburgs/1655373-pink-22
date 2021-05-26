@@ -37,13 +37,13 @@
 
   &:active {
     opacity: 30%;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 
 
   &:hover {
     fill: @red;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   @media (min-width: @tablet-width) {
@@ -81,6 +81,14 @@
   display: flex;
   align-items: center;
   margin-top: 34px;
+
+  :hover {
+    fill: @darkblue;
+  }
+
+  :active {
+    fill: fade(@darkblue, 30%);
+  }
 }
 
 .developer-info__logo {

@@ -29,7 +29,7 @@
 }
 
 .page-header--main-nav-open {
-  box-shadow: 0 1px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 0 @black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   background-color: @darkblue;
 }
 
@@ -65,13 +65,14 @@
 
   &:hover {
     fill: @red;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 
   &:active {
     fill: fade(@white, 30%);
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
+
 
   .page-header__logo-image--mobile {
     width: 74px;
@@ -141,7 +142,7 @@
   left: 0;
   top: 0;
   width: 50px;
-  height: 2px;
+  height: 3px;
   background-color: @white;
   box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
 }
@@ -183,4 +184,35 @@
   }
 }
 
+.page-header--main-nav-closed .page-header__main-nav-toggle {
+  &:hover {
+    &::before {
+      background-color: @red;
+      box-shadow: 0 8px 0 0 @red, 0 16px 0 0 @red;
+    }
+  }
 
+  &:active {
+    &::before {
+      background-color: fade(@red, 30%);
+      box-shadow: 0 8px 0 0 fade(@red, 30%), 0 16px 0 0 fade(@red, 30%);
+    }
+  }
+}
+
+
+.page-header--main-nav-open .page-header__main-nav-toggle {
+  &:hover {
+    &::before,
+    &::after {
+      background-color: @red;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: fade(@red, 30%);
+    }
+  }
+}

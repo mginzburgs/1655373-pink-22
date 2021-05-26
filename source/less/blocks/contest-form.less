@@ -51,12 +51,12 @@
 
         &:hover {
           border-color: @darkblue;
-          transition: all .5s ease;
+          transition: all 0.5s ease;
         }
 
         &:active {
           border-color: @red;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
         }
 
         &:focus-visible {
@@ -94,6 +94,14 @@
   margin-top: 42px;
   grid-area: contact;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+  }
 
   @media (max-width: @mobile-width-only) {
     .contest-form__heading {
@@ -330,12 +338,12 @@
 .contest-form__checkbox-input:hover + label::before,
 .contest-form__checkbox-input:focus + label::before {
   border: 2px solid @darkblue;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .contest-form__checkbox-input:active + label::before {
   border: 2px solid @red;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .contest-form__checkbox-input:checked + label::after {
@@ -398,12 +406,12 @@
 .contest-form__radio-input:hover + label::before,
 .contest-form__radio-input:focus + label::before {
   border: 2px solid @darkblue;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .contest-form__radio-input:active + label::before {
   border: 2px solid @red;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .contest-form__radio-input:checked + label::after {
