@@ -182,6 +182,10 @@
 .contest-form__section-emotions {
   grid-area: emotions;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 35px
+  }
 }
 
 
@@ -322,6 +326,16 @@
   left: 0;
 }
 
+.contest-form__checkbox-input:hover + label::before,
+.contest-form__checkbox-input:focus + label::before {
+  border: 2px solid @darkblue;
+}
+
+.contest-form__checkbox-input:active + label::before {
+  border: 2px solid @red;
+}
+
+
 
 
 
@@ -380,6 +394,15 @@
   border: 2px solid @background-grey;
   border-radius: 50%;
   left: 0;
+}
+
+.contest-form__radio-input:hover + label::before,
+.contest-form__radio-input:focus + label::before {
+  border: 2px solid @darkblue;
+}
+
+.contest-form__radio-input:active + label::before {
+  border: 2px solid @red;
 }
 
 .contest-form__radio-input:checked + label::after {
