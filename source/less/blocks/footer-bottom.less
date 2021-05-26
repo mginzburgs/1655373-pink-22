@@ -33,14 +33,17 @@
   margin-top: 34px;
   margin-bottom: 0;
   grid-column: 1/2;
+  fill: @darkblue;
 
   &:active {
     opacity: 30%;
+    transition: all .2s ease;
   }
-  fill: @darkblue;
+
 
   &:hover {
     fill: @red;
+    transition: all .5s ease;
   }
 
   @media (min-width: @tablet-width) {

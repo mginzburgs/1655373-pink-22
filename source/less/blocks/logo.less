@@ -5,10 +5,12 @@
 
   &:hover {
     fill: @red;
+    transition: all .5s ease;
   }
 
   &:active {
     fill: fade(@white, 30%);
+    transition: all .2s ease;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,10 +48,12 @@
 
   &:hover {
     fill: @red;
+    transition: all .5s ease;
   }
 
   &:active {
     fill: fade(@white, 30%);
+    transition: all .2s ease;
   }
 
   @media (max-width: @mobile-width-only) {
